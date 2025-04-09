@@ -1,0 +1,30 @@
+[
+  {
+    "name": "Black Forest Cake",
+    "price": 70,
+    "image": "/black-forest-cake.jpg",
+    "image2": "/black-forest-cake-2.jpg",
+    "description": "8\" 3 tiered moist chocolate cake layered with vanilla cream and cherries.\r\nTopped with Whittakers 72% Dark Ghana chocolate ganache."
+  },
+  {
+    "name": "Biscoff Brownie",
+    "price": 40,
+    "image": "/biscoff-brownie.jpg",
+    "image2": "/biscoff-brownie-2.jpg",
+    "description": "9\" chocolate brownie with a Biscoff filling and topping."
+  },
+  {
+    "name": "Carrot Cake Cheesecake",
+    "price": 50,
+    "image": "/carrot-cake-cheesecake.jpg",
+    "image2": "/carrot-cake-cheesecake-2.jpg",
+    "description": "9\" nutty and spiced carrot cake swirled with creamy cheesecake."
+  },
+  {
+    "name": "Dark Chocolate and Crystallised Ginger Biscuits",
+    "price": 20,
+    "image": "/dark-chocolate-ginger-biscuits.jpg",
+    "image2": "/dark-chocolate-ginger-biscuits-2.jpg",
+    "description": "Chunks of crystallised ginger and Whittakers 72% Dark Ghana chocolate."
+  }
+]

@@ -1,27 +1,16 @@
 import Image from "next/image";
 import Link from "next/link";
+import { getProducts } from "@/utilities/get-products";
+import { getFaqs } from "@/utilities/get-faqs";
+import { Product } from "@/interfaces/product";
+import { Faq } from "@/interfaces/faq";
 
-export default function Home() {
+export default async function Home() {
+  const products = await getProducts();
+  const faqs = await getFaqs();
+
   return (
-    <div className="w-[800px] ml-auto mr-auto">
-      <Image src="/banner-image.svg" className="ml-auto mr-auto" width="800" height="230" alt="Bakeful logo" />
-      <div className="flex w-[800px] ml-auto mr-auto text-lg font-bold">
-        <div className="flex-1">
-            <Link href="/" className={`hover:text-shadow`}>Home</Link>
-          </div>
-          <div className="flex-1">
-            <Link href="/" className={`hover:text-shadow`}>Products</Link>
-          </div>
-          <div className="flex-1">
-            <Link href="/" className={`hover:text-shadow`}>FAQ</Link>
-          </div>
-          <div className="flex-1">
-            <Link href="/" className={`hover:text-shadow`}>Contact</Link>
-          </div>
-          <div className="flex-1">
-            <Link href="/" className={`hover:text-shadow`}>About</Link>
-          </div>
-      </div>
+    <div>
       <Image src="/divider.svg" className="ml-auto mr-auto mt-5 mb-5" width="800" height="150" alt="Divider" />
       <div>
         Welcome to Bakeful!
@@ -32,66 +21,34 @@ export default function Home() {
         <br /><br />
         Everything is baked to order, just for you 🎀
       </div>
-      <Image src="/divider.svg" className="ml-auto mr-auto mt-5 mb-5" width="800" height="150" alt="Divider" />
-      <div className="mb-5">
-        <div className="font-bold bg-[#FFC8DD] w-[800px] ml-auto mr-auto mb-5 rounded-md">Black Forest Cake - $70</div>
-        <Image src="/black-forest-cake.jpg" className="ml-auto mr-auto mt-5" width="200" height="200" alt="Black Forest Cake" />
-        <div>
-          8&quot; 3 tiered moist chocolate cake layered with vanilla cream and cherries.
-          <br />
-          Topped with Whittakers dark chocolate ganache.
-        </div>
-      </div>
-      <div className="mb-5">
-        <div className="font-bold bg-[#FFC8DD] w-[800px] ml-auto mr-auto mb-5 rounded-md">Biscoff Brownie - $40</div>
-        <Image src="/biscoff-brownie.jpg" className="ml-auto mr-auto mt-5" width="200" height="200" alt="Black Forest Cake" />
-        <div>
-          Populate me!
-        </div>
-      </div>
-      <div className="mb-5">
-        <div className="font-bold bg-[#FFC8DD] w-[800px] ml-auto mr-auto mb-5 rounded-md">Carrot Cake Cheesecake - $50</div>
-        <Image src="/carrot-cake-cheesecake.jpg" className="ml-auto mr-auto mt-5" width="200" height="200" alt="Black Forest Cake" />
-        <div>
-          8&quot;? Cheesecake and carrot cake.
-        </div>
-      </div>
-      <div className="mb-5">
-        <div className="font-bold bg-[#FFC8DD] w-[800px] ml-auto mr-auto mb-5 rounded-md">Dark Chocolate and Crystallised Ginger Biscuits - $20</div>
-        <Image src="/dark-chocolate-ginger-biscuits.jpg" className="ml-auto mr-auto mt-5" width="200" height="200" alt="Black Forest Cake" />
-        <div>
-          Populate me!
-        </div>
-      </div>
-      <Image src="/divider.svg" className="ml-auto mr-auto mt-5 mb-5" width="800" height="150" alt="Divider" />
+      <Image id="products" src="/divider.svg" className="ml-auto mr-auto mt-5 mb-5" width="800" height="150" alt="Divider" />
+      {products.map((product: Product) => {
+        return (
+          <div key={product.name} className="mb-5">
+            <div className="font-bold bg-[#FFC8DD] ml-auto mr-auto mb-5 rounded-md">{product.name} - ${product.price}</div>
+            <div className="flex flex-row ml-auto mr-auto">
+              <Image src={product.image} className="mt-5 mr-5 ml-auto" width="200" height="200" alt={product.name} />
+              <Image src={product.image2} className="mt-5 mr-auto" width="200" height="200" alt={product.name} />
+            </div>
+            <div className="whitespace-pre-wrap">
+              {product.description}
+            </div>
+          </div>          
+        )
+      })}
+      <Image id="faq" src="/divider.svg" className="ml-auto mr-auto mt-5 mb-5" width="800" height="150" alt="Divider" />
       <div className="w-[800px] text-left">
         <div className="text-lg font-bold text-center mb-5">Frequently Asked Questions</div>
-        <div className="mb-2">
-          <div className="text-md font-bold">Do you deliver outside of Hamilton?</div>
-          <div className="text-sm">No sorry. Deliveries are by arrangement only and are charged depending on distance to travel.</div>
-        </div>
-        <div className="mb-2">
-          <div className="text-md font-bold">Can I pick up my order?</div>
-          <div className="text-sm">Yes, by arrangement only.</div>
-        </div>
-        <div className="mb-2">
-          <div className="text-md font-bold">How much notice do I need to provide?</div>
-          <div className="text-sm">Depends on the order. Probably a few days or something. Make sure you pay first.</div>
-        </div>
-        <div className="mb-2">
-          <div className="text-md font-bold">Can you do custom orders?</div>
-          <div className="text-sm">Please enquire and I&apos;ll do my best to meet your request.</div>
-        </div>
-        <div className="mb-2">
-          <div className="text-md font-bold">Do you make Gluten Free items?</div>
-          <div className="text-sm">Not at the moment.</div>
-        </div>
-        <div className="mb-2">
-          <div className="text-md font-bold">Do items come sliced or unsliced?</div>
-          <div className="text-sm">All items will be unsliced.</div>
-        </div>
+        {faqs.map((faq: Faq) => {
+          return (
+            <div key={faq.question} className="mb-2">
+              <div className="text-md font-bold">{faq.question}</div>
+              <div className="text-sm">{faq.answer}</div>
+            </div>         
+          )
+        })}
       </div>
-      <Image src="/divider.svg" className="ml-auto mr-auto mt-5 mb-5" width="800" height="150" alt="Divider" />      
+      <Image id="contact" src="/divider.svg" className="ml-auto mr-auto mt-5 mb-5" width="800" height="150" alt="Divider" />      
       <div>
         <div>Contact me if you want some sweet treats!</div>
         <div className="mt-5 text-left">
@@ -126,25 +83,17 @@ export default function Home() {
           <div className="grid grid-cols-[1fr,3fr] mt-2 mb-2">
             <div className="text-left text-lg">Requested Products:</div>
             <div className="col-start-2 pt-1">
-              <label>
-                <input type="checkbox" />
-                <span className="ml-2">Black Forest Cake</span>
-              </label>
-              <br />
-              <label>
-                <input type="checkbox" />
-                <span className="ml-2">Biscoff Brownie</span>
-              </label>
-              <br />
-              <label>
-                <input type="checkbox" />
-                <span className="ml-2">Carrot Cake Cheesecake</span>
-              </label>
-              <br />
-              <label>
-                <input type="checkbox" />
-                <span className="ml-2">Dark Chocolate and Crystallised Ginger Biscuits</span>
-              </label>
+              {products.map((product: Product) => {
+                return (
+                  <>
+                    <label key={product.name}>
+                      <input type="checkbox" />
+                      <span className="ml-2">{product.name}</span>
+                    </label>
+                    <br />         
+                  </>
+                )
+              })}              
             </div>
           </div>
 
@@ -158,10 +107,6 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </div>
-      <Image src="/divider.svg" className="ml-auto mr-auto mt-5 mb-5" width="800" height="150" alt="Divider" />      
-      <div className="mb-5">
-        Copyright © 2025 Bakeful
       </div>
     </div>
   );
