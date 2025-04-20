@@ -1,0 +1,52 @@
+"use client";
+import React, { useState } from 'react'
+import { Product } from "@/interfaces/product";
+import Image from 'next/image';
+import ModalComponent from './modal-component';
+
+const ProductsComponent = ({products}:{products: Array<Product>}) => {
+  const [selectedImage, setSelectedImage] = useState('')
+
+  const handleModalClose = () => {
+    setSelectedImage('')
+  }
+
+  const handleOnClicked = (imageSource: string) => {
+    setSelectedImage(imageSource);
+  }
+
+  return (
+    <div>
+      {products.map((product: Product) => {
+        const hasNamedPrices = product.prices[0][0] !== "";
+        const numSizes = product.prices.length;
+        return (
+          <div key={product.name} className="mb-5">
+            <div className="font-bold bg-[#FFC8DD] ml-auto mr-auto mb-5 rounded-md">{product.name}&nbsp;
+              {!hasNamedPrices ? `$${product.prices[0][1]}` : ""}
+              {hasNamedPrices && `[`}
+              {hasNamedPrices && product.prices.map((priceItem: [string, number], index: number) => {
+                return (<span key={priceItem[0]}>{priceItem[0]} ${priceItem[1]}{index < numSizes - 1 && `/`}</span>);
+              })}
+              {hasNamedPrices && `]`}
+            </div>
+            <div className="flex flex-row ml-auto mr-auto">
+              <Image src={product.image} className="mt-5 mr-5 ml-auto cursor-zoom-in" width="200" height="200" alt={product.name} onClick={() => handleOnClicked(product.image)} />
+              <Image src={product.image2} className="mt-5 mr-auto cursor-zoom-in" width="200" height="200" alt={product.name} onClick={() => handleOnClicked(product.image2)} />
+            </div>
+            <div className="whitespace-pre-wrap">
+              {product.description}
+            </div>
+          </div>          
+        )
+      })}
+      {selectedImage && (
+        <ModalComponent
+          selectedImage={selectedImage}
+          onClose={handleModalClose}
+        />
+      )}
+    </div>
+  )
+}
+export default ProductsComponent

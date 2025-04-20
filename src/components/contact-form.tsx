@@ -10,6 +10,7 @@ const ContactForm = ({products}:{products: Array<Product>}) => {
   const [lastName, setLastName] = useState('')
   const [email, setEmail] = useState('')
   const [message, setMessage] = useState('')
+  const [deliveryMethod, setDeliveryMethod] = useState('')
   const [requestedProducts, setRequestedProducts] = useState<Array<string>>([])
   const [submitting, setSubmitting] = useState(false);
   const [submitted, setSubmitted] = useState(false);
@@ -22,6 +23,10 @@ const ContactForm = ({products}:{products: Array<Product>}) => {
     } else {
       setRequestedProducts(prev => prev.filter(product => product !== event.target.id));
     }
+  }
+
+  const handleRadioButtonChange = (event: any) => {
+    setDeliveryMethod(event.target.value);
   }
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
@@ -58,7 +63,7 @@ const ContactForm = ({products}:{products: Array<Product>}) => {
       return;
     }
 
-    const data = { firstName, lastName, email, message, requestedProducts, recaptcha }
+    const data = { firstName, lastName, email, message, deliveryMethod, requestedProducts, recaptcha }
     const fetchPromise = fetch(endpoint, {
       method: 'POST',
       mode: 'cors',
@@ -104,6 +109,33 @@ const ContactForm = ({products}:{products: Array<Product>}) => {
             <div className="text-left text-lg">Message:</div>
             <div className="col-start-2">
               <textarea rows={5} className="form-control w-96 px-2 border-[1px] border-black bg-[#FFC8DD] rounded-md" value={message} onChange={(e) => setMessage(e.target.value)} maxLength={10*1024} required/><br/>
+            </div>
+          </div>
+
+          <div className="grid grid-cols-[1fr,3fr] mt-2 mb-2">
+            <div className="text-left text-lg">Delivery & Pick-up:</div>
+            <div className="col-start-2 pt-1">
+              <div onChange={handleRadioButtonChange}>
+                  <label>
+                    <input type="radio" id="delivery-west" value="Delivery Hamilton West" name="delivery" required />
+                    <span className="ml-2">Delivery Hamilton West</span>
+                  </label>
+                  <br />
+                  <label>
+                    <input type="radio" id="delivery-east" value="Delivery Hamilton East" name="delivery" required />
+                    <span className="ml-2">Delivery Hamilton East</span>
+                  </label>
+                  <br />
+                  <label>
+                    <input type="radio" id="pick-up" value="Pick-up" name="delivery" required />
+                    <span className="ml-2">Pick-up</span>
+                  </label>
+                  <br />
+                  <label>
+                    <input type="radio" id="unknown" value="Unknown" name="delivery" required />
+                    <span className="ml-2">Unknown</span>
+                  </label>                  
+                </div>            
             </div>
           </div>
 

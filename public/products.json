@@ -1,30 +1,67 @@
 [
   {
     "name": "Black Forest Cake",
-    "price": 70,
+    "prices": [
+      ["", 70]
+    ],
     "image": "/black-forest-cake.jpg",
     "image2": "/black-forest-cake-2.jpg",
     "description": "8\" 3 tiered moist chocolate cake layered with vanilla cream and cherries.\r\nTopped with Whittakers 72% Dark Ghana chocolate ganache."
   },
   {
     "name": "Biscoff Brownie",
-    "price": 40,
+    "prices": [
+      ["", 40]
+    ],
     "image": "/biscoff-brownie.jpg",
     "image2": "/biscoff-brownie-2.jpg",
     "description": "9\" chocolate brownie with a Biscoff filling and topping."
   },
   {
     "name": "Carrot Cake Cheesecake",
-    "price": 50,
+    "prices": [
+      ["", 50]
+    ],
     "image": "/carrot-cake-cheesecake.jpg",
     "image2": "/carrot-cake-cheesecake-2.jpg",
     "description": "9\" nutty and spiced carrot cake swirled with creamy cheesecake."
   },
   {
     "name": "Dark Chocolate and Crystallised Ginger Biscuits",
-    "price": 20,
+    "prices": [
+      ["6pk", 10],
+      ["12pk", 20]
+    ],
     "image": "/dark-chocolate-ginger-biscuits.jpg",
     "image2": "/dark-chocolate-ginger-biscuits-2.jpg",
     "description": "Chunks of crystallised ginger and Whittakers 72% Dark Ghana chocolate."
+  },
+  {
+    "name": "Dark Chocolate Ganache Biscuits",
+    "prices": [
+      ["15pk", 25]
+    ],
+    "image": "/dark-chocolate-ganache-biscuits.jpg",
+    "image2": "/dark-chocolate-ganache-biscuits-2.jpg",
+    "description": "Chocolate biscuits with a Whittakers 72% Dark Ghana chocolate ganache center."
+  },
+  {
+    "name": "Chocolate Strawberry Biscuits",
+    "prices": [
+      ["6pk", 10],
+      ["12pk", 20]
+    ],
+    "image": "/chocolate-strawberry-biscuits.jpg",
+    "image2": "/chocolate-strawberry-biscuits-2.jpg",
+    "description": "Indulgent milk chocolate and freeze dried strawberry biscuits."
+  },
+  {
+    "name": "Hazelnut Brownie",
+    "prices": [
+      ["", 20]
+    ],
+    "image": "/hazelnut-brownie.jpg",
+    "image2": "/hazelnut-brownie-2.jpg",
+    "description": "9\" chocolate brownie with a nutella filling and topping, sprinkled with Ferrero Rochers."
   }
 ]
