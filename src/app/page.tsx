@@ -12,7 +12,7 @@ export default async function Home() {
   return (
     <div>
       <Image src="/divider.svg" className="ml-auto mr-auto mt-5 mb-5" width="800" height="150" alt="Divider" />
-      <div>
+      <div className="md:text-lg text-sm">
         Welcome to Bakeful!
         <br /><br />
         Baking + Grateful = Bakeful ❤️
@@ -24,7 +24,7 @@ export default async function Home() {
       <Image id="products" src="/divider.svg" className="ml-auto mr-auto mt-5 mb-5" width="800" height="150" alt="Divider" />
       <ProductsComponent products={products} />
       <Image id="faq" src="/divider.svg" className="ml-auto mr-auto mt-5 mb-5" width="800" height="150" alt="Divider" />
-      <div className="w-[800px] text-left">
+      <div className="text-left">
         <div className="text-lg font-bold text-center mb-5">Frequently Asked Questions</div>
         {faqs.map((faq: Faq) => {
           return (

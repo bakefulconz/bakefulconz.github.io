@@ -21,7 +21,7 @@ const ProductsComponent = ({products}:{products: Array<Product>}) => {
         const hasNamedPrices = product.prices[0][0] !== "";
         const numSizes = product.prices.length;
         return (
-          <div key={product.name} className="mb-5">
+          <div key={product.name} className="mb-5 md:text-md text-sm">
             <div className="font-bold bg-[#FFC8DD] ml-auto mr-auto mb-5 rounded-md">{product.name}&nbsp;
               {!hasNamedPrices ? `$${product.prices[0][1]}` : ""}
               {hasNamedPrices && `[`}
@@ -31,8 +31,8 @@ const ProductsComponent = ({products}:{products: Array<Product>}) => {
               {hasNamedPrices && `]`}
             </div>
             <div className="flex flex-row ml-auto mr-auto">
-              <Image src={product.image} className="mt-5 mr-5 ml-auto cursor-zoom-in" width="200" height="200" alt={product.name} onClick={() => handleOnClicked(product.image)} />
-              <Image src={product.image2} className="mt-5 mr-auto cursor-zoom-in" width="200" height="200" alt={product.name} onClick={() => handleOnClicked(product.image2)} />
+              <Image src={product.image} className="mt-5 mr-5 ml-auto cursor-zoom-in max-w-[45vw]" width="200" height="200" alt={product.name} onClick={() => handleOnClicked(product.image)} />
+              <Image src={product.image2} className="mt-5 mr-auto cursor-zoom-in max-w-[45vw]" width="200" height="200" alt={product.name} onClick={() => handleOnClicked(product.image2)} />
             </div>
             <div className="whitespace-pre-wrap">
               {product.description}
