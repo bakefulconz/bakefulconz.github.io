@@ -9,28 +9,65 @@
     "description": "8\" 3 tiered moist chocolate cake layered with vanilla cream and cherries.\r\nTopped with Whittakers 72% Dark Ghana chocolate ganache."
   },
   {
-    "name": "Biscoff Brownie",
+    "name": "Passionfruit and White Chocolate Cake",
     "prices": [
-      ["", 40]
+      ["", 70]
     ],
-    "image": "/biscoff-brownie.jpg",
-    "image2": "/biscoff-brownie-2.jpg",
-    "description": "9\" chocolate brownie with a Biscoff filling and topping."
+    "image": "/passionfruit-white-chocolate-cake.jpg",
+    "image2": "/passionfruit-white-chocolate-cake-2.jpg",
+    "description": "8\" 3 tiered vanilla cake filled with passonfruit curd and covered in Whittakers White Chocolate ganache."
   },
   {
     "name": "Carrot Cake Cheesecake",
     "prices": [
-      ["", 50]
+      ["", 55]
     ],
     "image": "/carrot-cake-cheesecake.jpg",
     "image2": "/carrot-cake-cheesecake-2.jpg",
     "description": "9\" nutty and spiced carrot cake swirled with creamy cheesecake."
   },
   {
+    "name": "Biscoff Brownie",
+    "prices": [
+      ["", 45]
+    ],
+    "image": "/biscoff-brownie.jpg",
+    "image2": "/biscoff-brownie-2.jpg",
+    "description": "9\" chocolate brownie with a Biscoff filling and topping."
+  },
+  {
+    "name": "Hazelnut Brownie",
+    "prices": [
+      ["", 45]
+    ],
+    "image": "/hazelnut-brownie.jpg",
+    "image2": "/hazelnut-brownie-2.jpg",
+    "description": "9\" chocolate brownie with a nutella filling and topping, sprinkled with Ferrero Rochers."
+  },
+  {
+    "name": "Chocolate Peanut Butter Brownie",
+    "prices": [
+      ["", 40]
+    ],
+    "image": "/chocolate-peanut-butter-brownie.jpg",
+    "image2": "/chocolate-peanut-butter-brownie-2.jpg",
+    "description": "9\" chocolate brownie with Reese's Pieces, swirled with Pics peanut butter."
+  },
+  {
+    "name": "Chocolate Strawberry Biscuits",
+    "prices": [
+      ["6pk", 35],
+      ["12pk", 45]
+    ],
+    "image": "/chocolate-strawberry-biscuits.jpg",
+    "image2": "/chocolate-strawberry-biscuits-2.jpg",
+    "description": "Indulgent milk chocolate and freeze dried strawberry biscuits."
+  },
+  {
     "name": "Dark Chocolate and Crystallised Ginger Biscuits",
     "prices": [
-      ["6pk", 10],
-      ["12pk", 20]
+      ["6pk", 35],
+      ["12pk", 45]
     ],
     "image": "/dark-chocolate-ginger-biscuits.jpg",
     "image2": "/dark-chocolate-ginger-biscuits-2.jpg",
@@ -39,29 +76,30 @@
   {
     "name": "Dark Chocolate Ganache Biscuits",
     "prices": [
-      ["15pk", 25]
+      ["15pk", 30]
     ],
     "image": "/dark-chocolate-ganache-biscuits.jpg",
     "image2": "/dark-chocolate-ganache-biscuits-2.jpg",
     "description": "Chocolate biscuits with a Whittakers 72% Dark Ghana chocolate ganache center."
   },
   {
-    "name": "Chocolate Strawberry Biscuits",
+    "name": "Moro Biscuits",
     "prices": [
-      ["6pk", 10],
-      ["12pk", 20]
+      ["6pk", 30],
+      ["12pk", 40]
     ],
-    "image": "/chocolate-strawberry-biscuits.jpg",
-    "image2": "/chocolate-strawberry-biscuits-2.jpg",
-    "description": "Indulgent milk chocolate and freeze dried strawberry biscuits."
+    "image": "/moro-biscuits.jpg",
+    "image2": "/moro-biscuits-2.jpg",
+    "description": "Biscuits with chunks of Moro, topped with dulce de leche."
   },
   {
-    "name": "Hazelnut Brownie",
+    "name": "Chocolate Jaffa Biscuits",
     "prices": [
-      ["", 20]
+      ["6pk", 30],
+      ["12pk", 40]
     ],
-    "image": "/hazelnut-brownie.jpg",
-    "image2": "/hazelnut-brownie-2.jpg",
-    "description": "9\" chocolate brownie with a nutella filling and topping, sprinkled with Ferrero Rochers."
+    "image": "/chocolate-jaffa-biscuits.jpg",
+    "image2": "/chocolate-jaffa-biscuits-2.jpg",
+    "description": "Chocolate biscuits with Jaffas."
   }
 ]

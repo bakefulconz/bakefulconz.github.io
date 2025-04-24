@@ -3,6 +3,9 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Image from "next/image";
 import Link from "next/link";
+import { SocialIcon } from "react-social-icons";
+import 'react-social-icons/facebook';
+import 'react-social-icons/instagram';
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -33,6 +36,10 @@ export default function RootLayout({
           </div>
           <Image src="/divider.svg" className="ml-auto mr-auto mt-5 mb-5" width="800" height="150" alt="Divider" />      
           <div className="mb-5">
+            <SocialIcon url="https://www.instagram.com/bakeful.nz" />
+            &nbsp;
+            <SocialIcon url="https://www.facebook.com/profile.php?id=61572596709689" />
+            <br /><br />
             Copyright © {new Date().getFullYear()} Bakeful
           </div>          
         </main>

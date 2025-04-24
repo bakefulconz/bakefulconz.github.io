@@ -20,8 +20,11 @@ export default async function Home() {
         I&apos;m passionate about creating yummy homemade treats that you will love.
         <br /><br />
         Everything is baked to order, just for you 🎀
+        <br /><br />
+        <span className="text-sm font-bold italic">Note: My baking days are currently Tuesday through to Friday.</span>
       </div>
       <Image id="products" src="/divider.svg" className="ml-auto mr-auto mt-5 mb-5" width="800" height="150" alt="Divider" />
+      <div className="text-lg font-bold text-center mb-5">Product Range</div>
       <ProductsComponent products={products} />
       <Image id="faq" src="/divider.svg" className="ml-auto mr-auto mt-5 mb-5" width="800" height="150" alt="Divider" />
       <div className="text-left">

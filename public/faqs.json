@@ -1,15 +1,11 @@
 [
   {
     "question": "Can you deliver?",
-    "answer": "Yes, by arrangement inside the Hamilton city boundary. East Hamilton - $10, West Hamilton - $15"
+    "answer": "Yes, by arrangement inside the Hamilton city boundary. East Hamilton $10, West Hamilton $15."
   },
   {
     "question": "Can I pick up my order?",
     "answer": "Yes, by arrangement only."
-  },
-  {
-    "question": "How much notice do I need to provide?",
-    "answer": "Depends on the order. Probably a few days or something. Make sure you pay first."
   },
   {
     "question": "Can you do custom orders?",
