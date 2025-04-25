@@ -24,12 +24,17 @@ jobs:
         with:
           name: static-content
           path: out/
+
   deploy-staging:
     name: Deploy to staging
     runs-on: ubuntu-latest
     environment: staging
     needs: build-verify
     steps:
+      - name: Set GitHub Actions as Commit Author
+        run: |
+          git config --global user.name github-actions
+          git config --global user.email github-actions@github.com
       - name: Download artifact
         uses: actions/download-artifact@v4
         with:
