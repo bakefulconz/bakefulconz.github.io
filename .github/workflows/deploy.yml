@@ -4,11 +4,9 @@ on:
     branches:
       - main
   pull_request:
-permissions:
-  contents: write
 jobs:
-  release:
-    name: Release
+  build-verify:
+    name: Build and Verify
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -21,10 +19,33 @@ jobs:
         run: npm install
       - name: Build NPM package
         run: npm run build
-      - name: Publish github pages
-        if: github.event_name == 'push'
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: static-content
+          path: out/
+  deploy-staging:
+    name: Deploy to staging
+    runs-on: ubuntu-latest
+    environment: staging
+    steps:
+      - name: Download artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: static-content
+          path: out/
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          repository: ${{ env.DEPLOY_REPO }}
+          path: 'deploy'
+          token: ${{ secrets.DEPLOY_PAT }}
+      - name: Deploy files to target
         run: |
-          git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
-          npm run deploy -- -u "github-actions-bot <support+actions@github.com>"
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          cp -r out/ deploy
+          cd deploy
+          touch .nojekyll
+          echo ${{ env.DEPLOY_URL }} > CNAME
+          git add .
+          git commit -m $GITHUB_SHA
+          git push
