@@ -31,10 +31,6 @@ jobs:
     environment: staging
     needs: build-verify
     steps:
-      - name: Checkout source
-        uses: actions/checkout@v4
-        with:
-          path: 'build'
       - name: Set GitHub Actions as Commit Author
         run: |
           git config --global user.name github-actions
@@ -47,7 +43,7 @@ jobs:
       - name: Checkout target
         uses: actions/checkout@v4
         with:
-          repository: ${{ env.DEPLOY_REPO }}
+          repository: bakefulconz/staging-bakefulconz.github.io
           path: 'deploy'
           token: ${{ secrets.DEPLOY_PAT }}
       - name: Deploy files to target
