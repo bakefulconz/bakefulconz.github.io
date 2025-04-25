@@ -41,6 +41,7 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           name: static-content
+          path: out/
       - name: Checkout target
         uses: actions/checkout@v4
         with:
@@ -50,7 +51,7 @@ jobs:
       - name: Deploy files to target
         run: |
           rm -r deploy/*
-          cp -r out/ deploy
+          cp -r out/. deploy/
           cd deploy
           touch .nojekyll
           echo ${{ vars.DEPLOY_URL }} > CNAME
