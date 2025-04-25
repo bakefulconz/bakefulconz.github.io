@@ -1,0 +1,22 @@
+[
+  {
+    "question": "Can you deliver?",
+    "answer": "Yes, by arrangement inside the Hamilton city boundary. East Hamilton $10, West Hamilton $15."
+  },
+  {
+    "question": "Can I pick up my order?",
+    "answer": "Yes, by arrangement only."
+  },
+  {
+    "question": "Can you do custom orders?",
+    "answer": "Please enquire and I'll do my best to meet your request."
+  },
+  {
+    "question": "Do you make Gluten Free items?",
+    "answer": "Not at the moment."
+  },
+  {
+    "question": "Do items come sliced or unsliced?",
+    "answer": "All items will be unsliced."
+  }
+]

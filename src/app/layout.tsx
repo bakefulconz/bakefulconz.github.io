@@ -1,6 +1,11 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import Image from "next/image";
+import Link from "next/link";
+import { SocialIcon } from "react-social-icons";
+import 'react-social-icons/facebook';
+import 'react-social-icons/instagram';
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -15,12 +20,28 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="w-[100vw] min-h-screen">
+    <html lang="en">
       <body className={`${inter.className}`}>
-        <main className="w-screen text-center mt-4">
+        <main className="w-screen max-w-[800px] text-center ml-auto mr-auto p-2">
+          <Image src="/banner-image.svg" priority={true} className="ml-auto mr-auto" width="800" height="230" alt="Bakeful logo" />
+          <div className="flex md:text-lg text-md font-bold">
+            <Link href="/" className="flex-1">Home</Link>
+            <Link href="/#products" className="flex-1">Products</Link>
+            <Link href="/#faq" className="flex-1">FAQ</Link>
+            <Link href="/#contact" className="flex-1">Contact</Link>
+            <Link href="/about" className="flex-1">About</Link>
+          </div>
           <div>
             {children}
           </div>
+          <Image src="/divider.svg" className="ml-auto mr-auto mt-5 mb-5" width="800" height="150" alt="Divider" />      
+          <div className="mb-5">
+            <SocialIcon url="https://www.instagram.com/bakeful.nz" />
+            &nbsp;
+            <SocialIcon url="https://www.facebook.com/profile.php?id=61572596709689" />
+            <br /><br />
+            Copyright © {new Date().getFullYear()} Bakeful
+          </div>          
         </main>
       </body>
     </html>
