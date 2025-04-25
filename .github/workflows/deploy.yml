@@ -58,3 +58,35 @@ jobs:
           git add .
           git commit -m $GITHUB_SHA
           git push
+
+  deploy-production:
+    name: Deploy to production
+    runs-on: ubuntu-latest
+    environment: production
+    needs: deploy-staging
+    steps:
+      - name: Set GitHub Actions as Commit Author
+        run: |
+          git config --global user.name github-actions
+          git config --global user.email github-actions@github.com
+      - name: Download artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: static-content
+          path: out/
+      - name: Checkout target
+        uses: actions/checkout@v4
+        with:
+          repository: ${{ vars.DEPLOY_REPO }}
+          path: 'deploy'
+          token: ${{ secrets.DEPLOY_PAT }}
+      - name: Deploy files to target
+        run: |
+          rm -r deploy/*
+          cp -r out/. deploy/
+          cd deploy
+          touch .nojekyll
+          echo ${{ vars.DEPLOY_URL }} > CNAME
+          git add .
+          git commit -m $GITHUB_SHA
+          git push          
