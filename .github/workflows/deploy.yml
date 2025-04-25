@@ -43,7 +43,7 @@ jobs:
       - name: Checkout target
         uses: actions/checkout@v4
         with:
-          repository: bakefulconz/staging-bakefulconz.github.io
+          repository: ${{ vars.DEPLOY_REPO }}
           path: 'deploy'
           token: ${{ secrets.DEPLOY_PAT }}
       - name: Deploy files to target
@@ -51,7 +51,7 @@ jobs:
           cp -r out/ deploy
           cd deploy
           touch .nojekyll
-          echo ${{ env.DEPLOY_URL }} > CNAME
+          echo ${{ vars.DEPLOY_URL }} > CNAME
           git add .
           git commit -m $GITHUB_SHA
           git push
