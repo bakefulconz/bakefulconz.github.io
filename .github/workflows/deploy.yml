@@ -31,6 +31,10 @@ jobs:
     environment: staging
     needs: build-verify
     steps:
+      - name: Checkout source
+        uses: actions/checkout@v4
+        with:
+          path: 'build'
       - name: Set GitHub Actions as Commit Author
         run: |
           git config --global user.name github-actions
@@ -40,7 +44,7 @@ jobs:
         with:
           name: static-content
           path: out/
-      - name: Checkout
+      - name: Checkout target
         uses: actions/checkout@v4
         with:
           repository: ${{ env.DEPLOY_REPO }}
