@@ -107,8 +107,9 @@ const ContactForm = ({products}:{products: Array<Product>}) => {
       .then(response => response.json())
       .finally(() => setSubmitting(false))
       .catch(reason => {
-        alert('Failed to submit your contact request. Please try again later.')
-        console.log(reason)
+        alert('Failed to submit your contact request. Please try again later.');
+        console.log(reason);
+        throw reason;
       })
       .then(data => {
         setSubmitted(true);
