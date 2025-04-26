@@ -121,89 +121,75 @@ const ContactForm = ({products}:{products: Array<Product>}) => {
       <Script src="https://www.google.com/recaptcha/api.js" async defer />
       <form className={`${submitted && "hidden"}`} action={endpoint} onSubmit={handleSubmit} method="POST">
         <div>Contact me if you want some sweet treats!</div>
-        <div className="mt-5 text-left">
-          <div className="grid grid-cols-[1fr,3fr] mt-2 mb-2">
-            <div className="text-left pt-1 md:text-lg text-sm">First Name:<span className="text-red-600">*</span></div>
-            <div className="col-start-2">
-              <input type="text" className="form-control h-8 md:w-72 w-64 px-2 border-[1px] border-black bg-[#FFC8DD] rounded-md" value={firstName} onChange={(e) => setFirstName(e.target.value)} maxLength={256} required/><br/>
-            </div>
+        <div className="grid grid-cols-[1fr,3fr] grid-rows[auto,auto,auto,auto,auto,auto,auto] mt-5 text-left">
+          <div className="text-left my-auto md:text-lg text-sm">First Name:<span className="text-red-600">*</span></div>
+          <div className="col-start-2 pt-1">
+            <input type="text" className="form-control h-8 md:w-72 w-60 px-2 border-[1px] border-black bg-[#FFC8DD] rounded-md" value={firstName} onChange={(e) => setFirstName(e.target.value)} maxLength={256} required/><br/>
           </div>
 
-          <div className="grid grid-cols-[1fr,3fr] mt-2 mb-2">
-            <div className="text-left pt-1 md:text-lg text-sm">Last Name:<span className="text-red-600">*</span></div>
-            <div className="col-start-2">
-              <input type="text" className="form-control h-8 md:w-72 w-64 px-2 border-[1px] border-black bg-[#FFC8DD] rounded-md" value={lastName} onChange={(e) => setLastName(e.target.value)} maxLength={256} required/><br/>
-            </div>
+          <div className="row-start-2 text-left my-auto md:text-lg text-sm">Last Name:<span className="text-red-600">*</span></div>
+          <div className="row-start-2 col-start-2 pt-1">
+            <input type="text" className="form-control h-8 md:w-72 w-60 px-2 border-[1px] border-black bg-[#FFC8DD] rounded-md" value={lastName} onChange={(e) => setLastName(e.target.value)} maxLength={256} required/><br/>
           </div>
 
-          <div className="grid grid-cols-[1fr,3fr] mt-2 mb-2">
-            <div className="text-left pt-1 md:text-lg text-sm">Email:<span className="text-red-600">*</span></div>
-            <div className="col-start-2">
-              <input type="text" className="form-control h-8 md:w-72 w-64 px-2 border-[1px] border-black bg-[#FFC8DD] rounded-md" value={email} onChange={(e) => setEmail(e.target.value)} maxLength={256} required/><br/>
-            </div>
+          <div className="row-start-3 text-left my-auto md:text-lg text-sm">Email:<span className="text-red-600">*</span></div>
+          <div className="row-start-3 col-start-2 pt-1">
+            <input type="text" className="form-control h-8 md:w-72 w-60 px-2 border-[1px] border-black bg-[#FFC8DD] rounded-md" value={email} onChange={(e) => setEmail(e.target.value)} maxLength={256} required/><br/>
           </div>
 
-          <div className="grid grid-cols-[1fr,3fr] mt-2 mb-2">
-            <div className="text-left pt-1 md:text-lg text-sm">Message:<span className="text-red-600">*</span></div>
-            <div className="col-start-2">
-              <textarea rows={5} className="form-control md:w-96 w-64 px-2 border-[1px] border-black bg-[#FFC8DD] rounded-md" value={message} onChange={(e) => setMessage(e.target.value)} maxLength={10*1024} required/><br/>
-            </div>
+          <div className="row-start-4 text-left pt-2 md:text-lg text-sm">Message:<span className="text-red-600">*</span></div>
+          <div className="row-start-4 col-start-2 pt-1">
+            <textarea rows={5} className="form-control md:w-96 w-60 px-2 border-[1px] border-black bg-[#FFC8DD] rounded-md" value={message} onChange={(e) => setMessage(e.target.value)} maxLength={10*1024} required/><br/>
           </div>
 
-          <div className="grid grid-cols-[1fr,3fr] mt-2 mb-2">
-            <div className="text-left md:text-lg text-sm">Delivery & Pick-up:<span className="text-red-600">*</span></div>
-            <div className="col-start-2 pt-1 md:text-md text-sm">
-              <div onChange={handleRadioButtonChange}>
+          <div className="row-start-5 text-left md:text-lg text-sm">Delivery & Pick-up:<span className="text-red-600">*</span></div>
+          <div className="row-start-5 col-start-2 pt-1 md:text-md text-sm">
+            <div onChange={handleRadioButtonChange}>
+                <label>
+                  <input type="radio" id="delivery-west" value="Delivery Hamilton West" name="delivery" required />
+                  <span className="ml-2">Delivery Hamilton West</span>
+                </label>
+                <br />
+                <label>
+                  <input type="radio" id="delivery-east" value="Delivery Hamilton East" name="delivery" required />
+                  <span className="ml-2">Delivery Hamilton East</span>
+                </label>
+                <br />
+                <label>
+                  <input type="radio" id="pick-up" value="Pick-up" name="delivery" required />
+                  <span className="ml-2">Pick-up</span>
+                </label>
+                <br />
+                <label>
+                  <input type="radio" id="unknown" value="Unknown" name="delivery" required />
+                  <span className="ml-2">Unknown</span>
+                </label>                  
+              </div>            
+          </div>
+
+          <div className="row-start-6 text-left md:text-lg text-sm">Requested Products:</div>
+          <div className="row-start-6 col-start-2 pt-1">
+            {products.map((product: Product) => {
+              return (
+                <div key={product.name}>
                   <label>
-                    <input type="radio" id="delivery-west" value="Delivery Hamilton West" name="delivery" required />
-                    <span className="ml-2">Delivery Hamilton West</span>
+                    <input type="checkbox" id={product.name} onChange={handleCheckboxChange} />
+                    <span className="ml-2 md:text-md text-sm">{product.name}</span>
                   </label>
-                  <br />
-                  <label>
-                    <input type="radio" id="delivery-east" value="Delivery Hamilton East" name="delivery" required />
-                    <span className="ml-2">Delivery Hamilton East</span>
-                  </label>
-                  <br />
-                  <label>
-                    <input type="radio" id="pick-up" value="Pick-up" name="delivery" required />
-                    <span className="ml-2">Pick-up</span>
-                  </label>
-                  <br />
-                  <label>
-                    <input type="radio" id="unknown" value="Unknown" name="delivery" required />
-                    <span className="ml-2">Unknown</span>
-                  </label>                  
-                </div>            
-            </div>
-          </div>
-
-          <div className="grid grid-cols-[1fr,3fr] mt-2 mb-2">
-            <div className="text-left md:text-lg text-sm">Requested Products:</div>
-            <div className="col-start-2 pt-1">
-              {products.map((product: Product) => {
-                return (
-                  <div key={product.name}>
-                    <label>
-                      <input type="checkbox" id={product.name} onChange={handleCheckboxChange} />
-                      <span className="ml-2 md:text-md text-sm">{product.name}</span>
-                    </label>
-                    <br />         
-                  </div>
-                )
-              })}              
-            </div>
+                  <br />         
+                </div>
+              )
+            })}
           </div>
 
           <ReCAPTCHA ref={reCaptchaRef} size="invisible" className="mr-0 ml-0" sitekey="6LcDJR8rAAAAAKrmMiQgNgvTUv1WDveDboRQRRpw" />          
-          <div className="grid grid-cols-[1fr,3fr] mt-2 mb-2">
-            <div className="col-start-2">
-              <button type="submit" className={`clear-both border-[1px] min-w-24 ${submitting && "text-left"} border-black bg-[#FFC8DD] px-2 py-1 rounded mt-1 hover:bg-yellow-50 disabled:bg-gray-300`} disabled={submitting}>{submitting ? `Sending${".".repeat(numDots)}` : "Submit"}</button>
-              <br />
-              <div className="text-xs text-gray-500 pt-1">
-                This site is protected by reCAPTCHA and the Google
-                <a className="text-blue-700" href="https://policies.google.com/privacy"> Privacy Policy</a> and
-                <a className="text-blue-700" href="https://policies.google.com/terms"> Terms of Service</a> apply.
-              </div>
+          <div className="row-start-7 col-start-2">
+            <button type="submit" className={`clear-both border-[1px] min-w-24 ${submitting && "text-left"} border-black bg-[#FFC8DD] px-2 py-1 rounded mt-1 hover:bg-yellow-50 disabled:bg-gray-300`} disabled={submitting}>{submitting ? `Sending${".".repeat(numDots)}` : "Submit"}</button>
+            <br />
+            <div className="text-xs text-gray-500 pt-1">
+              This site is protected by reCAPTCHA and the Google
+              <a className="text-blue-700" href="https://policies.google.com/privacy"> Privacy Policy</a> and
+              <a className="text-blue-700" href="https://policies.google.com/terms"> Terms of Service</a> apply.
             </div>
           </div>
         </div>
