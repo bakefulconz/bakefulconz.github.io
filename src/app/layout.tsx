@@ -23,7 +23,9 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${inter.className}`}>
         <main className="w-screen max-w-[800px] text-center ml-auto mr-auto p-2">
-          <Image src="/banner-image.svg" priority={true} className="ml-auto mr-auto" width="800" height="230" alt="Bakeful logo" />
+          <Link href="/" className="ml-auto mr-auto">
+            <Image src="/banner-image.svg" priority={true} width="800" height="230" alt="Bakeful logo" />
+          </Link>
           <div className="flex md:text-lg text-md font-bold">
             <Link href="/" className="flex-1">Home</Link>
             <Link href="/#products" className="flex-1">Products</Link>
