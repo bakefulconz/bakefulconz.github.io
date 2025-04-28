@@ -6,7 +6,7 @@ import Link from "next/link";
 import { SocialIcon } from "react-social-icons";
 import 'react-social-icons/facebook';
 import 'react-social-icons/instagram';
-import { GoogleTagManager } from "@next/third-parties/google";
+import { GoogleAnalytics } from "@next/third-parties/google";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -22,7 +22,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <GoogleTagManager gtmId="G-NDL7CJ6JPT" />
+      <GoogleAnalytics gaId="G-NDL7CJ6JPT" />
       <body className={`${inter.className}`}>
         <main className="w-screen max-w-[800px] text-center ml-auto mr-auto p-2">
           <Link href="/" className="ml-auto mr-auto">
