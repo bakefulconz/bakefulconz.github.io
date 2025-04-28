@@ -14,7 +14,7 @@ export default function Home() {
         <br /><br />
         Let me add some sweetness into your day! 🤍
       </div>
-      <Image src="/justin-krystal.png" className="ml-auto mr-auto mt-5 mb-5" width="600" height="400" alt="Justin and Krystal" />
+      <Image src="/krystal.jpg" className="ml-auto mr-auto mt-5 mb-5" width="300" height="200" alt="Justin and Krystal" />
     </div>
   );
 }
