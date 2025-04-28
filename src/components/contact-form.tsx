@@ -184,7 +184,7 @@ const ContactForm = ({products}:{products: Array<Product>}) => {
 
           <ReCAPTCHA ref={reCaptchaRef} size="invisible" className="mr-0 ml-0" sitekey="6LcDJR8rAAAAAKrmMiQgNgvTUv1WDveDboRQRRpw" />          
           <div className="row-start-7 col-start-2">
-            <button type="submit" className={`clear-both border-[1px] min-w-24 ${submitting && "text-left"} border-black bg-[#FFC8DD] px-2 py-1 rounded mt-1 hover:bg-yellow-50 disabled:bg-gray-300`} disabled={submitting}>{submitting ? `Sending${".".repeat(numDots)}` : "Submit"}</button>
+            <button type="submit" className={`clear-both cursor-pointer border-[1px] min-w-24 ${submitting && "text-left"} border-black bg-[#FFC8DD] px-2 py-1 rounded mt-1 hover:bg-yellow-50 disabled:bg-gray-300`} disabled={submitting}>{submitting ? `Sending${".".repeat(numDots)}` : "Submit"}</button>
             <br />
             <div className="text-xs text-gray-500 pt-1">
               This site is protected by reCAPTCHA and the Google
