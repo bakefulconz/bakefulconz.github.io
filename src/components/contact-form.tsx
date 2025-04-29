@@ -157,7 +157,7 @@ const ContactForm = ({products}:{products: Array<Product>}) => {
                 <br />
                 <label>
                   <input type="radio" id="pick-up" value="Pick-up" name="delivery" required />
-                  <span className="ml-2">Pick-up</span>
+                  <span className="ml-2">Pick-up (Fairview Downs, Hamilton)</span>
                 </label>
                 <br />
                 <label>
