@@ -147,12 +147,12 @@ const ContactForm = ({products}:{products: Array<Product>}) => {
             <div onChange={handleRadioButtonChange}>
                 <label>
                   <input type="radio" id="delivery-west" value="Delivery Hamilton West" name="delivery" required />
-                  <span className="ml-2">Delivery Hamilton West</span>
+                  <span className="ml-2">Delivery Hamilton West ($15)</span>
                 </label>
                 <br />
                 <label>
                   <input type="radio" id="delivery-east" value="Delivery Hamilton East" name="delivery" required />
-                  <span className="ml-2">Delivery Hamilton East</span>
+                  <span className="ml-2">Delivery Hamilton East ($10)</span>
                 </label>
                 <br />
                 <label>
