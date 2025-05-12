@@ -54,6 +54,15 @@
     "description": "9\" chocolate brownie with Reese's Pieces, swirled with Pics peanut butter."
   },
   {
+    "name": "Mint Chocolate Brownie",
+    "prices": [
+      ["", 45]
+    ],
+    "image": "/mint-chocolate-brownie.jpg",
+    "image2": "/mint-chocolate-brownie-2.jpg",
+    "description": "9\" chocolate brownie with Aero Mint Chocolate and topped with Whittakers 72% Dark Ghana Chocolate and crumbled Aero Mint Chocolate"
+  },  
+  {
     "name": "Chocolate Strawberry Biscuits",
     "prices": [
       ["6pk", 35],
