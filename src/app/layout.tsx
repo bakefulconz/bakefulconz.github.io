@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   title: "Bakeful",
   description: "Home page of Bakeful",
   icons: {
-    icon: "/favicon.ico"
+    icon: "/bakeful-circle-logo.png?crop=center&height=32&width=32"
   }  
 };
 
