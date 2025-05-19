@@ -18,6 +18,15 @@
     "description": "8\" 3 tiered vanilla cake filled with passonfruit curd and covered in Whittakers White Chocolate ganache."
   },
   {
+    "name": "Hummingbird Cake",
+    "prices": [
+      ["", 60]
+    ],
+    "image": "/hummingbird-cake.jpg",
+    "image2": "/hummingbird-cake-2.jpg",
+    "description": "8\" 2 tiered hummingbird cake - cinnamon, bananas, pineapple, crunchy pecans and a cream cheese frosting."
+  },
+  {
     "name": "Carrot Cake Cheesecake",
     "prices": [
       ["", 55]
