@@ -21,7 +21,7 @@ export default async function Home() {
         <br /><br />
         Everything is baked to order, just for you 🎀
         <br /><br />
-        <span className="text-sm font-bold italic">Note: My baking days are currently Tuesday through to Friday.</span>
+        <span className="text-sm font-bold italic">Note: My baking days are currently Tuesday through to Friday. Pick up and delivery is in Hamilton.</span>
       </div>
       <Image id="products" src="/divider.svg" className="ml-auto mr-auto mt-5 mb-5" width="800" height="150" alt="Divider" />
       <div className="text-lg font-bold text-center mb-5">Product Range</div>
