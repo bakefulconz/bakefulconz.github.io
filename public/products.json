@@ -54,12 +54,12 @@
     "description": "9\" chocolate brownie with a nutella filling and topping, sprinkled with Ferrero Rochers."
   },
   {
-    "name": "Chocolate Peanut Butter Brownie",
+    "name": "Peanut Butter Brownie",
     "prices": [
       ["", 40]
     ],
-    "image": "/chocolate-peanut-butter-brownie.jpg",
-    "image2": "/chocolate-peanut-butter-brownie-2.jpg",
+    "image": "/peanut-butter-brownie.jpg",
+    "image2": "/peanut-butter-brownie-2.jpg",
     "description": "9\" chocolate brownie with Reese's Pieces, swirled with Pics peanut butter."
   },
   {
