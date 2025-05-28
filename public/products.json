@@ -70,7 +70,16 @@
     "image": "/mint-chocolate-brownie.jpg",
     "image2": "/mint-chocolate-brownie-2.jpg",
     "description": "9\" chocolate brownie with Aero Mint Chocolate and topped with Whittakers 72% Dark Ghana Chocolate and crumbled Aero Mint Chocolate."
-  },  
+  },
+  {
+    "name": "Oreo Brownie",
+    "prices": [
+      ["", 40]
+    ],
+    "image": "/oreo-brownie.jpg",
+    "image2": "/oreo-brownie-2.jpg",
+    "description": "9\" chocolate brownie with oreos in the filling and on top."
+  },
   {
     "name": "Chocolate Strawberry Biscuits",
     "prices": [
