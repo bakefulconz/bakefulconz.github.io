@@ -118,5 +118,25 @@
     "image": "/chocolate-jaffa-biscuits.jpg",
     "image2": "/chocolate-jaffa-biscuits-2.jpg",
     "description": "Chocolate biscuits with Jaffas."
+  },
+  {
+    "name": "Nutella M&M Biscuits",
+    "prices": [
+      ["6pk", 35],
+      ["12pk", 45]
+    ],
+    "image": "/nutella-mandm-biscuits.jpg",
+    "image2": "/nutella-mandm-biscuits-2.jpg",
+    "description": "Nutella filled biscuits, topped with M&Ms."
+  },
+  {
+    "name": "Biscoff Biscuits",
+    "prices": [
+      ["6pk", 35],
+      ["12pk", 45]
+    ],
+    "image": "/biscoff-biscuits.jpg",
+    "image2": "/biscoff-biscuits-2.jpg",
+    "description": "Biscuits filled and topped with Biscoff."
   }
 ]
