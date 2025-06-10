@@ -27,6 +27,15 @@
     "description": "8\" 2 tiered hummingbird cake - cinnamon, bananas, pineapple, crunchy pecans and a cream cheese frosting."
   },
   {
+    "name": "Lolly Cake",
+    "prices": [
+      ["", 50]
+    ],
+    "image": "/lolly-cake.jpg",
+    "image2": "/lolly-cake-2.jpg",
+    "description": "9\" Kiwi classic lolly cake - Crushed Malt biscuits, condensed milk, butter and Explorers lollies."
+  },
+  {
     "name": "Carrot Cake Cheesecake",
     "prices": [
       ["", 55]
