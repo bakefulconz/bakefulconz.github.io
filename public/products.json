@@ -1,151 +1,171 @@
 [
   {
-    "name": "Black Forest Cake",
-    "prices": [
-      ["", 70]
-    ],
-    "image": "/black-forest-cake.jpg",
-    "image2": "/black-forest-cake-2.jpg",
-    "description": "8\" 3 tiered moist chocolate cake layered with vanilla cream and cherries.\r\nTopped with Whittakers 72% Dark Ghana chocolate ganache."
+    "name": "Cakes",
+    "items": [
+      {
+        "name": "Black Forest Cake",
+        "prices": [
+          ["", 70]
+        ],
+        "image": "/black-forest-cake.jpg",
+        "image2": "/black-forest-cake-2.jpg",
+        "description": "8\" 3 tiered moist chocolate cake layered with vanilla cream and cherries.\r\nTopped with Whittakers 72% Dark Ghana chocolate ganache."
+      },
+      {
+        "name": "Passionfruit and White Chocolate Cake",
+        "prices": [
+          ["", 70]
+        ],
+        "image": "/passionfruit-white-chocolate-cake.jpg",
+        "image2": "/passionfruit-white-chocolate-cake-2.jpg",
+        "description": "8\" 3 tiered vanilla cake filled with passonfruit curd and covered in Whittakers White Chocolate ganache."
+      },
+      {
+        "name": "Hummingbird Cake",
+        "prices": [
+          ["", 60]
+        ],
+        "image": "/hummingbird-cake.jpg",
+        "image2": "/hummingbird-cake-2.jpg",
+        "description": "8\" 2 tiered hummingbird cake - cinnamon, bananas, pineapple, crunchy pecans and a cream cheese frosting."
+      },
+      {
+        "name": "Lolly Cake",
+        "prices": [
+          ["", 50]
+        ],
+        "image": "/lolly-cake.jpg",
+        "image2": "/lolly-cake-2.jpg",
+        "description": "9\" Kiwi classic lolly cake - Crushed Malt biscuits, condensed milk, butter and Explorers lollies."
+      }
+    ]
   },
   {
-    "name": "Passionfruit and White Chocolate Cake",
-    "prices": [
-      ["", 70]
-    ],
-    "image": "/passionfruit-white-chocolate-cake.jpg",
-    "image2": "/passionfruit-white-chocolate-cake-2.jpg",
-    "description": "8\" 3 tiered vanilla cake filled with passonfruit curd and covered in Whittakers White Chocolate ganache."
+    "name": "Cheesecakes",
+    "items": [
+      {
+        "name": "Carrot Cake Cheesecake",
+        "prices": [
+          ["", 55]
+        ],
+        "image": "/carrot-cake-cheesecake.jpg",
+        "image2": "/carrot-cake-cheesecake-2.jpg",
+        "description": "9\" nutty and spiced carrot cake swirled with creamy cheesecake."
+      }
+    ]
   },
   {
-    "name": "Hummingbird Cake",
-    "prices": [
-      ["", 60]
-    ],
-    "image": "/hummingbird-cake.jpg",
-    "image2": "/hummingbird-cake-2.jpg",
-    "description": "8\" 2 tiered hummingbird cake - cinnamon, bananas, pineapple, crunchy pecans and a cream cheese frosting."
+    "name": "Brownies",
+    "items": [
+      {
+        "name": "Biscoff Brownie",
+        "prices": [
+          ["", 45]
+        ],
+        "image": "/biscoff-brownie.jpg",
+        "image2": "/biscoff-brownie-2.jpg",
+        "description": "9\" chocolate brownie with a Biscoff filling and topping."
+      },
+      {
+        "name": "Hazelnut Brownie",
+        "prices": [
+          ["", 45]
+        ],
+        "image": "/hazelnut-brownie.jpg",
+        "image2": "/hazelnut-brownie-2.jpg",
+        "description": "9\" chocolate brownie with a nutella filling and topping, sprinkled with Ferrero Rochers."
+      },
+      {
+        "name": "Peanut Butter Brownie",
+        "prices": [
+          ["", 40]
+        ],
+        "image": "/peanut-butter-brownie.jpg",
+        "image2": "/peanut-butter-brownie-2.jpg",
+        "description": "9\" chocolate brownie with Reese's Pieces, swirled with Pics peanut butter."
+      },
+      {
+        "name": "Mint Chocolate Brownie",
+        "prices": [
+          ["", 45]
+        ],
+        "image": "/mint-chocolate-brownie.jpg",
+        "image2": "/mint-chocolate-brownie-2.jpg",
+        "description": "9\" chocolate brownie with Aero Mint Chocolate and topped with Whittakers 72% Dark Ghana Chocolate and crumbled Aero Mint Chocolate."
+      },
+      {
+        "name": "Oreo Brownie",
+        "prices": [
+          ["", 40]
+        ],
+        "image": "/oreo-brownie.jpg",
+        "image2": "/oreo-brownie-2.jpg",
+        "description": "9\" chocolate brownie with Oreos in the filling and on top."
+      }
+    ]
   },
   {
-    "name": "Lolly Cake",
-    "prices": [
-      ["", 50]
-    ],
-    "image": "/lolly-cake.jpg",
-    "image2": "/lolly-cake-2.jpg",
-    "description": "9\" Kiwi classic lolly cake - Crushed Malt biscuits, condensed milk, butter and Explorers lollies."
-  },
-  {
-    "name": "Carrot Cake Cheesecake",
-    "prices": [
-      ["", 55]
-    ],
-    "image": "/carrot-cake-cheesecake.jpg",
-    "image2": "/carrot-cake-cheesecake-2.jpg",
-    "description": "9\" nutty and spiced carrot cake swirled with creamy cheesecake."
-  },
-  {
-    "name": "Biscoff Brownie",
-    "prices": [
-      ["", 45]
-    ],
-    "image": "/biscoff-brownie.jpg",
-    "image2": "/biscoff-brownie-2.jpg",
-    "description": "9\" chocolate brownie with a Biscoff filling and topping."
-  },
-  {
-    "name": "Hazelnut Brownie",
-    "prices": [
-      ["", 45]
-    ],
-    "image": "/hazelnut-brownie.jpg",
-    "image2": "/hazelnut-brownie-2.jpg",
-    "description": "9\" chocolate brownie with a nutella filling and topping, sprinkled with Ferrero Rochers."
-  },
-  {
-    "name": "Peanut Butter Brownie",
-    "prices": [
-      ["", 40]
-    ],
-    "image": "/peanut-butter-brownie.jpg",
-    "image2": "/peanut-butter-brownie-2.jpg",
-    "description": "9\" chocolate brownie with Reese's Pieces, swirled with Pics peanut butter."
-  },
-  {
-    "name": "Mint Chocolate Brownie",
-    "prices": [
-      ["", 45]
-    ],
-    "image": "/mint-chocolate-brownie.jpg",
-    "image2": "/mint-chocolate-brownie-2.jpg",
-    "description": "9\" chocolate brownie with Aero Mint Chocolate and topped with Whittakers 72% Dark Ghana Chocolate and crumbled Aero Mint Chocolate."
-  },
-  {
-    "name": "Oreo Brownie",
-    "prices": [
-      ["", 40]
-    ],
-    "image": "/oreo-brownie.jpg",
-    "image2": "/oreo-brownie-2.jpg",
-    "description": "9\" chocolate brownie with Oreos in the filling and on top."
-  },
-  {
-    "name": "Chocolate Strawberry Biscuits",
-    "prices": [
-      ["6pk", 35],
-      ["12pk", 45]
-    ],
-    "image": "/chocolate-strawberry-biscuits.jpg",
-    "image2": "/chocolate-strawberry-biscuits-2.jpg",
-    "description": "Indulgent milk chocolate and freeze dried strawberry biscuits."
-  },
-  {
-    "name": "Dark Chocolate and Crystallised Ginger Biscuits",
-    "prices": [
-      ["6pk", 35],
-      ["12pk", 45]
-    ],
-    "image": "/dark-chocolate-ginger-biscuits.jpg",
-    "image2": "/dark-chocolate-ginger-biscuits-2.jpg",
-    "description": "Chunks of crystallised ginger and Whittakers 72% Dark Ghana chocolate."
-  },
-  {
-    "name": "Dark Chocolate Ganache Biscuits",
-    "prices": [
-      ["15pk", 30]
-    ],
-    "image": "/dark-chocolate-ganache-biscuits.jpg",
-    "image2": "/dark-chocolate-ganache-biscuits-2.jpg",
-    "description": "Chocolate biscuits with a Whittakers 72% Dark Ghana chocolate ganache center."
-  },
-  {
-    "name": "Chocolate Jaffa Biscuits",
-    "prices": [
-      ["6pk", 30],
-      ["12pk", 40]
-    ],
-    "image": "/chocolate-jaffa-biscuits.jpg",
-    "image2": "/chocolate-jaffa-biscuits-2.jpg",
-    "description": "Chocolate biscuits with Jaffas."
-  },
-  {
-    "name": "Nutella M&M Biscuits",
-    "prices": [
-      ["6pk", 35],
-      ["12pk", 45]
-    ],
-    "image": "/nutella-mandm-biscuits.jpg",
-    "image2": "/nutella-mandm-biscuits-2.jpg",
-    "description": "Nutella filled biscuits, topped with M&Ms."
-  },
-  {
-    "name": "Biscoff Biscuits",
-    "prices": [
-      ["6pk", 35],
-      ["12pk", 45]
-    ],
-    "image": "/biscoff-biscuits.jpg",
-    "image2": "/biscoff-biscuits-2.jpg",
-    "description": "Biscuits filled and topped with Biscoff."
-  }
+    "name": "Biscuits",
+    "items": [
+      {
+        "name": "Chocolate Strawberry Biscuits",
+        "prices": [
+          ["6pk", 35],
+          ["12pk", 45]
+        ],
+        "image": "/chocolate-strawberry-biscuits.jpg",
+        "image2": "/chocolate-strawberry-biscuits-2.jpg",
+        "description": "Indulgent milk chocolate and freeze dried strawberry biscuits."
+      },
+      {
+        "name": "Dark Chocolate and Crystallised Ginger Biscuits",
+        "prices": [
+          ["6pk", 35],
+          ["12pk", 45]
+        ],
+        "image": "/dark-chocolate-ginger-biscuits.jpg",
+        "image2": "/dark-chocolate-ginger-biscuits-2.jpg",
+        "description": "Chunks of crystallised ginger and Whittakers 72% Dark Ghana chocolate."
+      },
+      {
+        "name": "Dark Chocolate Ganache Biscuits",
+        "prices": [
+          ["15pk", 30]
+        ],
+        "image": "/dark-chocolate-ganache-biscuits.jpg",
+        "image2": "/dark-chocolate-ganache-biscuits-2.jpg",
+        "description": "Chocolate biscuits with a Whittakers 72% Dark Ghana chocolate ganache center."
+      },
+      {
+        "name": "Chocolate Jaffa Biscuits",
+        "prices": [
+          ["6pk", 30],
+          ["12pk", 40]
+        ],
+        "image": "/chocolate-jaffa-biscuits.jpg",
+        "image2": "/chocolate-jaffa-biscuits-2.jpg",
+        "description": "Chocolate biscuits with Jaffas."
+      },
+      {
+        "name": "Nutella M&M Biscuits",
+        "prices": [
+          ["6pk", 35],
+          ["12pk", 45]
+        ],
+        "image": "/nutella-mandm-biscuits.jpg",
+        "image2": "/nutella-mandm-biscuits-2.jpg",
+        "description": "Nutella filled biscuits, topped with M&Ms."
+      },
+      {
+        "name": "Biscoff Biscuits",
+        "prices": [
+          ["6pk", 35],
+          ["12pk", 45]
+        ],
+        "image": "/biscoff-biscuits.jpg",
+        "image2": "/biscoff-biscuits-2.jpg",
+        "description": "Biscuits filled and topped with Biscoff."
+      }
+    ]
+  }  
 ]

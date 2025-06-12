@@ -2,9 +2,12 @@
 import Script from "next/script";
 import React, { useEffect, useState } from 'react'
 import ReCAPTCHA from 'react-google-recaptcha'
+import { Category } from "@/interfaces/category";
 import { Product } from "@/interfaces/product";
+import SinglePriceContactComponent from "@/components/single-price-contact-component";
+import MultiPriceContactComponent from "@/components/multi-price-contact-component";
 
-const ContactForm = ({products}:{products: Array<Product>}) => {
+const ContactForm = ({productCategories}:{productCategories: Array<Category>}) => {
   const [firstName, setFirstName] = useState('')
   const [lastName, setLastName] = useState('')
   const [email, setEmail] = useState('')
@@ -169,16 +172,36 @@ const ContactForm = ({products}:{products: Array<Product>}) => {
 
           <div className="row-start-6 text-left md:text-lg text-sm">Requested Products:</div>
           <div className="row-start-6 col-start-2 pt-1">
-            {products.map((product: Product) => {
+            {productCategories.map((productCategory: Category) => {
+              let items = productCategory.items.map((product: Product) => {
+                return (
+                  <div key={`${product.name}`}>
+                    <label>
+                      {
+                        product.prices[0][0] === "" && (
+                          <SinglePriceContactComponent
+                            product={product}
+                            onCheckboxChange={handleCheckboxChange} />
+                        )
+                      }
+                      {
+                        product.prices[0][0] !== "" &&
+                        (
+                          <MultiPriceContactComponent
+                            product={product}
+                            onCheckboxChange={handleCheckboxChange} />
+                        )
+                      }
+                    </label>
+                    <br />
+                  </div>
+                )
+              })
               return (
-                <div key={product.name}>
-                  <label>
-                    <input type="checkbox" id={product.name} onChange={handleCheckboxChange} />
-                    <span className="ml-2 md:text-md text-sm">{product.name}</span>
-                  </label>
-                  <br />         
-                </div>
-              )
+                <div key={productCategory.name}>
+                  <div className="font-bold">{productCategory.name}</div>
+                  {items}
+                </div>)
             })}
           </div>
 
