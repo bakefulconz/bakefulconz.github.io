@@ -5,12 +5,12 @@ import { ContactComponentProps } from "@/interfaces/contact-component-props";
 
 const SinglePriceContactComponent = (props: ContactComponentProps) => {
   return (
-    <React.Fragment key={props.product.name}>
+    <label key={props.product.name}>
       <input type="checkbox" id={props.product.name} onChange={props.onCheckboxChange} />
-      <span className="ml-2 md:text-md text-sm">
+      <span className="ml-2 text-sm">
         {props.product.name}
       </span>
-    </React.Fragment>
+    </label>
   )
 }
 export default SinglePriceContactComponent

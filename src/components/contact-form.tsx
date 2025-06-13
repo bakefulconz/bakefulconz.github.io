@@ -124,7 +124,7 @@ const ContactForm = ({productCategories}:{productCategories: Array<Category>}) =
       <Script src="https://www.google.com/recaptcha/api.js" async defer />
       <form className={`${submitted && "hidden"}`} action={endpoint} onSubmit={handleSubmit} method="POST">
         <div>Contact me if you want some sweet treats!</div>
-        <div className="grid grid-cols-[1fr,3fr] grid-rows[auto,auto,auto,auto,auto,auto,auto] mt-5 text-left">
+        <div className="grid grid-cols-[1fr,3fr] grid-rows[auto,auto,auto,auto,auto,auto,auto,auto,auto] mt-5 text-left">
           <div className="text-left my-auto md:text-lg text-sm">First Name:<span className="text-red-600">*</span></div>
           <div className="col-start-2 pt-1">
             <input type="text" className="form-control h-8 md:w-72 w-60 px-2 border-[1px] border-black bg-[#FFC8DD] rounded-md" value={firstName} onChange={(e) => setFirstName(e.target.value)} maxLength={256} required/><br/>
@@ -145,8 +145,8 @@ const ContactForm = ({productCategories}:{productCategories: Array<Category>}) =
             <textarea rows={5} className="form-control md:w-96 w-60 px-2 border-[1px] border-black bg-[#FFC8DD] rounded-md" value={message} onChange={(e) => setMessage(e.target.value)} maxLength={10*1024} required/><br/>
           </div>
 
-          <div className="row-start-5 text-left md:text-lg text-sm">Delivery & Pick-up:<span className="text-red-600">*</span></div>
-          <div className="row-start-5 col-start-2 pt-1 md:text-md text-sm">
+          <div className="row-start-5 col-span-2 text-left md:text-lg text-sm mt-2">Delivery & Pick-up:<span className="text-red-600">*</span></div>
+          <div className="row-start-6 col-span-2 pt-1 text-sm ml-4">
             <div onChange={handleRadioButtonChange}>
                 <label>
                   <input type="radio" id="delivery-west" value="Delivery Hamilton West" name="delivery" required />
@@ -170,43 +170,41 @@ const ContactForm = ({productCategories}:{productCategories: Array<Category>}) =
               </div>            
           </div>
 
-          <div className="row-start-6 text-left md:text-lg text-sm">Requested Products:</div>
-          <div className="row-start-6 col-start-2 pt-1">
+          <div className="row-start-7 col-span-2 text-left md:text-lg text-sm mt-2">Requested Products:</div>
+          <div className="row-start-8 col-span-2 pt-1">
             {productCategories.map((productCategory: Category) => {
               let items = productCategory.items.map((product: Product) => {
                 return (
-                  <div key={`${product.name}`}>
-                    <label>
-                      {
-                        product.prices[0][0] === "" && (
-                          <SinglePriceContactComponent
-                            product={product}
-                            onCheckboxChange={handleCheckboxChange} />
-                        )
-                      }
-                      {
-                        product.prices[0][0] !== "" &&
-                        (
-                          <MultiPriceContactComponent
-                            product={product}
-                            onCheckboxChange={handleCheckboxChange} />
-                        )
-                      }
-                    </label>
+                  <div className="ml-4" key={`${product.name}`}>
+                    {
+                      product.prices[0][0] === "" && (
+                        <SinglePriceContactComponent
+                          product={product}
+                          onCheckboxChange={handleCheckboxChange} />
+                      )
+                    }
+                    {
+                      product.prices[0][0] !== "" &&
+                      (
+                        <MultiPriceContactComponent
+                          product={product}
+                          onCheckboxChange={handleCheckboxChange} />
+                      )
+                    }
                     <br />
                   </div>
                 )
               })
               return (
                 <div key={productCategory.name}>
-                  <div className="font-bold">{productCategory.name}</div>
+                  <div className="font-bold text-sm">{productCategory.name}</div>
                   {items}
                 </div>)
             })}
           </div>
 
           <ReCAPTCHA ref={reCaptchaRef} size="invisible" className="mr-0 ml-0" sitekey="6LcDJR8rAAAAAKrmMiQgNgvTUv1WDveDboRQRRpw" />          
-          <div className="row-start-7 col-start-2">
+          <div className="row-start-9 col-span-2 mt-2 text-center">
             <button type="submit" className={`clear-both cursor-pointer border-[1px] min-w-24 ${submitting && "text-left"} border-black bg-[#FFC8DD] px-2 py-1 rounded mt-1 hover:bg-yellow-50 disabled:bg-gray-300`} disabled={submitting}>{submitting ? `Sending${".".repeat(numDots)}` : "Submit"}</button>
             <br />
             <div className="text-xs text-gray-500 pt-1">
@@ -217,7 +215,7 @@ const ContactForm = ({productCategories}:{productCategories: Array<Category>}) =
           </div>
         </div>
       </form>
-      <div className={`mt-2 md:text-lg text-md ${!submitted && "hidden"}`}>
+      <div className={`mt-2 md:text-lg ${!submitted && "hidden"}`}>
         Thank you. Your message has been sent.
       </div>      
     </div>

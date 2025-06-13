@@ -31,7 +31,7 @@ export default function RootLayout({
           <Link href="/" className="ml-auto mr-auto">
             <Image src="/banner-image.svg" priority={true} width="800" height="230" alt="Bakeful logo" />
           </Link>
-          <div className="flex md:text-lg text-md font-bold">
+          <div className="flex md:text-lg text-base font-bold">
             <Link href="/" className="flex-1">Home</Link>
             <Link href="/#products" className="flex-1">Products</Link>
             <Link href="/#faq" className="flex-1">FAQ</Link>

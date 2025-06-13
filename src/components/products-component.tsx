@@ -21,13 +21,13 @@ const ProductsComponent = ({productCategories}:{productCategories: Array<Categor
       {productCategories.map((productCategory: Category) => {
         return (
           <div key={productCategory.name}>
-            <div id={productCategory.name.toLowerCase()} className="font-bold bg-[url(/sprinkles-bg.jpg)] bg-bottom-right ml-auto mr-auto mb-5 rounded-md md:text-xl text-md p-3">{productCategory.name}</div>
+            <div id={productCategory.name.toLowerCase()} className="font-bold bg-[url(/sprinkles-bg.jpg)] bg-bottom-right ml-auto mr-auto mb-5 rounded-md md:text-xl p-3">{productCategory.name}</div>
             {productCategory.items.map((product: Product) => {
               const hasNamedPrices = product.prices[0][0] !== "";
               const numSizes = product.prices.length;
               return (
-                <div key={product.name} className="mb-5 md:text-md text-sm">
-                  <div className="font-bold bg-[#FFC8DD] ml-auto mr-auto mb-5 rounded-md md:text-lg text-sm">{product.name}&nbsp;
+                <div key={product.name} className="mb-5 text-sm">
+                  <div className="font-bold bg-[#FFC8DD] ml-auto mr-auto md:w-xl mb-5 rounded-md md:text-lg text-sm">{product.name}&nbsp;
                     {!hasNamedPrices ? `$${product.prices[0][1]}` : ""}
                     {hasNamedPrices && `[`}
                     {hasNamedPrices && product.prices.map((priceItem: [string, number], index: number) => {

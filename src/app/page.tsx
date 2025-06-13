@@ -39,7 +39,7 @@ export default async function Home() {
         {faqs.map((faq: Faq) => {
           return (
             <div key={faq.question} className="mb-2">
-              <div className="text-md font-bold">{faq.question}</div>
+              <div className="font-bold">{faq.question}</div>
               <div className="text-sm">{faq.answer}</div>
             </div>         
           )
