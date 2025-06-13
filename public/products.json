@@ -165,6 +165,26 @@
         "image": "/biscoff-biscuits.jpg",
         "image2": "/biscoff-biscuits-2.jpg",
         "description": "Biscuits filled and topped with Biscoff."
+      },
+      {
+        "name": "KitKat Biscuits",
+        "prices": [
+          ["6pk", 30],
+          ["12pk", 40]
+        ],
+        "image": "/kitkat-biscuits.jpg",
+        "image2": "/kitkat-biscuits-2.jpg",
+        "description": "Chocolate biscuits with KitKats inside and on top."
+      },
+      {
+        "name": "Peanut Butter Biscuits",
+        "prices": [
+          ["6pk", 30],
+          ["12pk", 40]
+        ],
+        "image": "/peanut-butter-biscuits.jpg",
+        "image2": "/peanut-butter-biscuits-2.jpg",
+        "description": "Chocolate biscuits with a Reese's Peanut Butter Cup inside and topped with drizzled Pic's Peanut Butter."
       }
     ]
   }  
