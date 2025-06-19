@@ -51,6 +51,15 @@
         "image": "/carrot-cake-cheesecake.jpg",
         "image2": "/carrot-cake-cheesecake-2.jpg",
         "description": "9\" nutty and spiced carrot cake swirled with creamy cheesecake."
+      },
+      {
+        "name": "Biscoff Cheesecake",
+        "prices": [
+          ["", 55]
+        ],
+        "image": "/biscoff-cheesecake.jpg",
+        "image2": "/biscoff-cheesecake-2.jpg",
+        "description": "9\" no bake cheesecake with a Biscoff filling and topping."
       }
     ]
   },
