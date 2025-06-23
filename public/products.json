@@ -37,6 +37,15 @@
         "image": "/lolly-cake.jpg",
         "image2": "/lolly-cake-2.jpg",
         "description": "9\" Kiwi classic lolly cake - Crushed Malt biscuits, condensed milk, butter and Explorers lollies."
+      },
+      {
+        "name": "Apple, Date and Walnut Cake",
+        "prices": [
+          ["", 40]
+        ],
+        "image": "/apple-date-walnut-cake.jpg",
+        "image2": "/apple-date-walnut-cake-2.jpg",
+        "description": "9\" ring pan, apple, date and walnut cake topped with a crunchy walnut topping."
       }
     ]
   },
