@@ -119,6 +119,15 @@
         "image": "/oreo-brownie.jpg",
         "image2": "/oreo-brownie-2.jpg",
         "description": "9\" chocolate brownie with Oreos in the filling and on top."
+      },
+      {
+        "name": "Strawberry Chocolate Brownie",
+        "prices": [
+          ["", 45]
+        ],
+        "image": "/strawberry-chocolate-brownie.jpg",
+        "image2": "/strawberry-chocolate-brownie-2.jpg",
+        "description": "9\" chocolate brownie with Aero Strawberry Chocolate and topped with Whittakers 72% Dark Ghana Chocolate and crumbled Aero Strawberry Chocolate."
       }
     ]
   },
