@@ -164,16 +164,6 @@
         "description": "Chocolate biscuits with a Whittakers 72% Dark Ghana chocolate ganache center."
       },
       {
-        "name": "Chocolate Jaffa Biscuits",
-        "prices": [
-          ["6pk", 30],
-          ["12pk", 40]
-        ],
-        "image": "/chocolate-jaffa-biscuits.jpg",
-        "image2": "/chocolate-jaffa-biscuits-2.jpg",
-        "description": "Chocolate biscuits with Jaffas."
-      },
-      {
         "name": "Nutella M&M Biscuits",
         "prices": [
           ["6pk", 35],
