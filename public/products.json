@@ -5,20 +5,22 @@
       {
         "name": "Black Forest Cake",
         "prices": [
-          ["", 70]
+          ["2 tier", 55],
+          ["3 tier", 70]
         ],
         "image": "/black-forest-cake.jpg",
         "image2": "/black-forest-cake-2.jpg",
-        "description": "8\" 3 tiered moist chocolate cake layered with vanilla cream and cherries.\r\nTopped with Whittakers 72% Dark Ghana chocolate ganache."
+        "description": "8\" 2 or 3 tiered moist chocolate cake layered with vanilla cream and cherries.\r\nTopped with Whittakers 72% Dark Ghana chocolate ganache."
       },
       {
         "name": "Passionfruit and White Chocolate Cake",
         "prices": [
-          ["", 70]
+          ["2 tier", 55],
+          ["3 tier", 70]
         ],
         "image": "/passionfruit-white-chocolate-cake.jpg",
         "image2": "/passionfruit-white-chocolate-cake-2.jpg",
-        "description": "8\" 3 tiered vanilla cake filled with passonfruit curd and covered in Whittakers White Chocolate ganache."
+        "description": "8\" 2 or 3 tiered vanilla cake filled with passonfruit curd and covered in Whittakers White Chocolate ganache."
       },
       {
         "name": "Hummingbird Cake",
