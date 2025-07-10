@@ -38,7 +38,7 @@ export default async function Home() {
         <div className="text-lg font-bold text-center mb-5">Frequently Asked Questions</div>
         {faqs.map((faq: Faq) => {
           return (
-            <div key={faq.question} className="mb-2">
+            <div key={faq.question} className="mb-2 whitespace-pre-wrap">
               <div className="font-bold">{faq.question}</div>
               <div className="text-sm">{faq.answer}</div>
             </div>         

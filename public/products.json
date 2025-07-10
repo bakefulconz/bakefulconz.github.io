@@ -46,6 +46,15 @@
         "image": "/apple-date-walnut-cake.jpg",
         "image2": "/apple-date-walnut-cake-2.jpg",
         "description": "9\" ring pan, apple, date and walnut cake topped with a crunchy walnut topping."
+      },
+      {
+        "name": "Coffee and Walnut Cake",
+        "prices": [
+          ["", 55]
+        ],
+        "image": "/coffee-walnut-cake.jpg",
+        "image2": "/coffee-walnut-cake-2.jpg",
+        "description": "8\" 2 tiered coffee cake layered with a white chocolate and coffee whipped ganache and walnuts."
       }
     ]
   },
