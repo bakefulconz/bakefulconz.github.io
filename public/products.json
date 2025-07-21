@@ -57,6 +57,15 @@
         "image": "/coffee-walnut-cake.jpg",
         "image2": "/coffee-walnut-cake-2.jpg",
         "description": "8\" 2 tiered coffee cake layered with a white chocolate and coffee whipped ganache and walnuts."
+      },
+      {
+        "name": "German Chocolate Cake",
+        "prices": [
+          ["", 60]
+        ],
+        "image": "/german-chocolate-cake.jpg",
+        "image2": "/german-chocolate-cake-2.jpg",
+        "description": "8\" 2 tiered chocolate cake layered with a coconut and pecan frosting and chocolate frosting."
       }
     ]
   },
