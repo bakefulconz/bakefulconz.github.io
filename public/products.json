@@ -175,6 +175,15 @@
         "image": "/strawberry-chocolate-brownie.jpg",
         "image2": "/strawberry-chocolate-brownie-2.jpg",
         "description": "9\" chocolate brownie with Aero Strawberry Chocolate and topped with Whittakers 72% Dark Ghana Chocolate and crumbled Aero Strawberry Chocolate."
+      },
+      {
+        "name": "Salted Caramel Brownie",
+        "prices": [
+          ["", 45]
+        ],
+        "image": "/salted-caramel-brownie.jpg",
+        "image2": "/salted-caramel-brownie-2.jpg",
+        "description": "9\" chocolate brownie filled with Whittakers Dark Salted Caramel chocolate and topped with Caramel sauce."
       }
     ]
   },

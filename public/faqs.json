@@ -1,5 +1,13 @@
 [
   {
+    "question": "What payment methods do you accept?",
+    "answer": "Bank transfer is the only accepted payment method."
+  },
+  {
+    "question": "When do you need to receive payment by?",
+    "answer": "Payment must be received at least 48 hours before pick up or delivery to confirm the order. The payment due date will be specified on the invoice."
+  },
+  {
     "question": "Can you deliver?",
     "answer": "Yes, by arrangement inside the Hamilton city boundary. East Hamilton $10, West Hamilton $15."
   },
