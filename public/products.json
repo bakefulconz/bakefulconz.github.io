@@ -93,6 +93,15 @@
         "image": "/dark-chocolate-orange-cake.jpg",
         "image2": "/dark-chocolate-orange-cake-2.jpg",
         "description": "8\" 2 tiered chocolate cake filled with an orange chocolate chip buttercream. Topped with Whittakers 72% Dark Ghana chocolate ganache."
+      },
+      {
+        "name": "Cookie Cake",
+        "prices": [
+          ["", 45]
+        ],
+        "image": "/cookie-cake.jpg",
+        "image2": "/cookie-cake-2.jpg",
+        "description": "9\" milk chocolate chip cookie cake decorated with buttercream and sprinkles."
       }
     ]
   },
