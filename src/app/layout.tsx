@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   title: "Bakeful",
   description: "Home page of Bakeful",
   icons: {
-    icon: "/bakeful-circle-logo.png?crop=center&height=32&width=32"
+    icon: "/bakeful-circle-logo.png?crop=center&height=64&width=64"
   }  
 };
 
@@ -29,7 +29,7 @@ export default function RootLayout({
       <body className={`${inter.className}`}>
         <main className="w-screen max-w-[800px] text-center ml-auto mr-auto p-2">
           <Link href="/" className="ml-auto mr-auto">
-            <Image src="/banner-image.svg" priority={true} width="800" height="230" alt="Bakeful logo" />
+            <Image src="/banner-image.svg" className="ml-auto mr-auto" priority={true} width="230" height="230" alt="Bakeful logo" />
           </Link>
           <div className="flex md:text-lg text-base font-bold">
             <Link href="/" className="flex-1">Home</Link>
