@@ -102,6 +102,15 @@
         "image": "/cookie-cake.jpg",
         "image2": "/cookie-cake-2.jpg",
         "description": "9\" milk chocolate chip cookie cake decorated with buttercream and sprinkles."
+      },
+      {
+        "name": "Chocolate Bubblegum Cake",
+        "prices": [
+          ["", 50]
+        ],
+        "image": "/chocolate-bubblegum-cake.jpg",
+        "image2": "/chocolate-bubblegum-cake-2.jpg",
+        "description": "8\" 2 tiered chocolate cake with bubblegum buttercream and covered with wine gums, Natural Confectionery gummy bear lollies and sprinkles."
       }
     ]
   },
