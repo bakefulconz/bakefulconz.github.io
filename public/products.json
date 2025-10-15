@@ -286,6 +286,15 @@
         "image": "/cookie-monster-biscuits.jpg",
         "image2": "/cookie-monster-biscuits-2.jpg",
         "description": "Biscuits with white chocolate, milk chocolate, mini Oreos and Cookie Time Cookie Bites inside and on top."
+      },
+      {
+        "name": "Mini Cookie Cups",
+        "prices": [
+          ["24pk", 30]
+        ],
+        "image": "/mini-cookie-cups.jpg",
+        "image2": "/mini-cookie-cups-2.jpg",
+        "description": "24 mini chocolate chip cookie cups filled with your choice of filling: Nutella, Pic's Peanut Butter, Dulce de Leche or Biscoff."
       }
     ]
   }  
