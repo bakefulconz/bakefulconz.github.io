@@ -22,11 +22,12 @@ export default async function Home() {
         <br /><br />
         Everything is baked to order, just for you 🎀
         <br /><br />
-        <span className="text-sm font-bold italic">Note: My baking days are currently Tuesday through to Friday. Pick up and delivery is in Hamilton.</span>
+        <span className="text-sm font-bold italic">Note: My baking days are Monday through to Friday. Pick up and delivery is in Hamilton.</span>
       </div>
       <Image id="products" src="/divider.svg" className="ml-auto mr-auto mt-5 mb-5" width="800" height="150" alt="Divider" />
       <div className="text-lg font-bold text-center mb-2">Product Range</div>
       <div className="flex md:text-lg text-sm font-bold mb-5">
+        <Link href="/#specialreleases" className="flex-1 underline">Special Releases</Link>
         <Link href="/#cakes" className="flex-1 underline">Cakes</Link>
         <Link href="/#cheesecakes" className="flex-1 underline">Cheesecakes</Link>
         <Link href="/#brownies" className="flex-1 underline">Brownies</Link>
