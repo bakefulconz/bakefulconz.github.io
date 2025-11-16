@@ -1,6 +1,6 @@
 [
   {
-    "name": "Special Releases",
+    "name": "Limited Time",
     "items": [
       {
         "name": "Christmas Brownie",
@@ -28,22 +28,22 @@
       {
         "name": "Black Forest Cake",
         "prices": [
-          ["2 tier", 55],
-          ["3 tier", 70]
+          ["2 layer", 55],
+          ["3 layer", 70]
         ],
         "image": "/black-forest-cake.jpg",
         "image2": "/black-forest-cake-2.jpg",
-        "description": "8\" 2 or 3 tiered moist chocolate cake layered with vanilla cream and cherries.\r\nTopped with Whittakers 72% Dark Ghana chocolate ganache."
+        "description": "8\" 2 or 3 layered moist chocolate cake layered with vanilla cream and cherries.\r\nTopped with Whittakers 72% Dark Ghana chocolate ganache."
       },
       {
         "name": "Passionfruit White Chocolate Cake",
         "prices": [
-          ["2 tier", 55],
-          ["3 tier", 70]
+          ["2 layer", 55],
+          ["3 layer", 70]
         ],
         "image": "/passionfruit-white-chocolate-cake.jpg",
         "image2": "/passionfruit-white-chocolate-cake-2.jpg",
-        "description": "8\" 2 or 3 tiered vanilla cake filled with passonfruit curd and covered in Whittakers White Chocolate ganache."
+        "description": "8\" 2 or 3 layered vanilla cake filled with passonfruit curd and covered in Whittakers White Chocolate ganache."
       },
       {
         "name": "Hummingbird Cake",
@@ -52,7 +52,7 @@
         ],
         "image": "/hummingbird-cake.jpg",
         "image2": "/hummingbird-cake-2.jpg",
-        "description": "8\" 2 tiered hummingbird cake - cinnamon, bananas, pineapple, crunchy pecans and a cream cheese frosting."
+        "description": "8\" 2 layered hummingbird cake - cinnamon, bananas, pineapple, crunchy pecans and a cream cheese frosting."
       },
       {
         "name": "Lolly Cake",
@@ -79,7 +79,7 @@
         ],
         "image": "/coffee-walnut-cake.jpg",
         "image2": "/coffee-walnut-cake-2.jpg",
-        "description": "8\" 2 tiered coffee cake layered with a white chocolate and coffee whipped ganache and walnuts."
+        "description": "8\" 2 layered coffee cake layered with a white chocolate and coffee whipped ganache and walnuts."
       },
       {
         "name": "German Chocolate Cake",
@@ -88,7 +88,7 @@
         ],
         "image": "/german-chocolate-cake.jpg",
         "image2": "/german-chocolate-cake-2.jpg",
-        "description": "8\" 2 tiered chocolate cake layered with a coconut and pecan frosting and chocolate frosting."
+        "description": "8\" 2 layered chocolate cake layered with a coconut and pecan frosting and chocolate frosting."
       },
       {
         "name": "Pinkie Cake",
@@ -97,7 +97,7 @@
         ],
         "image": "/pinkie-cake.jpg",
         "image2": "/pinkie-cake-2.jpg",
-        "description": "8\" 3 tiered pink raspberry cake with layers of pink compote (rhubarb, strawberry and raspberry). Covered with a raspberry buttercream and sprinkles."
+        "description": "8\" 3 layered pink raspberry cake with layers of pink compote (rhubarb, strawberry and raspberry). Covered with a raspberry buttercream and sprinkles."
       },
       {
         "name": "Banoffee Cake",
@@ -106,7 +106,7 @@
         ],
         "image": "/banoffee-cake.jpg",
         "image2": "/banoffee-cake-2.jpg",
-        "description": "8\" 2 tiered banana cake layered with dulce de leche, bananas and a dulce de leche buttercream."
+        "description": "8\" 2 layered banana cake layered with dulce de leche, bananas and a dulce de leche buttercream."
       },
       {
         "name": "Dark Chocolate Orange Cake",
@@ -115,7 +115,7 @@
         ],
         "image": "/dark-chocolate-orange-cake.jpg",
         "image2": "/dark-chocolate-orange-cake-2.jpg",
-        "description": "8\" 2 tiered chocolate cake filled with an orange chocolate chip buttercream. Topped with Whittakers 72% Dark Ghana chocolate ganache."
+        "description": "8\" 2 layered chocolate cake filled with an orange chocolate chip buttercream. Topped with Whittakers 72% Dark Ghana chocolate ganache."
       },
       {
         "name": "Cookie Cake",
@@ -133,7 +133,7 @@
         ],
         "image": "/chocolate-bubblegum-cake.jpg",
         "image2": "/chocolate-bubblegum-cake-2.jpg",
-        "description": "8\" 2 tiered chocolate cake with bubblegum buttercream and covered with wine gums, Natural Confectionery gummy bear lollies and sprinkles."
+        "description": "8\" 2 layered chocolate cake with bubblegum buttercream and covered with wine gums, Natural Confectionery gummy bear lollies and sprinkles."
       }
     ]
   },

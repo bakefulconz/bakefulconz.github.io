@@ -27,7 +27,7 @@ export default async function Home() {
       <Image id="products" src="/divider.svg" className="ml-auto mr-auto mt-5 mb-5" width="800" height="150" alt="Divider" />
       <div className="text-lg font-bold text-center mb-2">Product Range</div>
       <div className="flex md:text-lg text-sm font-bold mb-5">
-        <Link href="/#specialreleases" className="flex-1 underline">Special Releases</Link>
+        <Link href="/#limitedtime" className="flex-1 underline">Limited Time</Link>
         <Link href="/#cakes" className="flex-1 underline">Cakes</Link>
         <Link href="/#cheesecakes" className="flex-1 underline">Cheesecakes</Link>
         <Link href="/#brownies" className="flex-1 underline">Brownies</Link>
