@@ -23,8 +23,6 @@ export default async function Home() {
         Everything is baked to order, just for you 🎀
         <br /><br />
         <span className="text-sm font-bold italic">Note: My baking days are Monday through to Friday. Pick up and delivery is in Hamilton.</span>
-        <br />
-        <span className="bg-[#FEC8DC] text-sm font-bold italic">My last baking day for 2025 is the 19th of December. First baking day for 2026 is the 5th of January.</span>        
       </div>
       <Image id="products" src="/divider.svg" className="ml-auto mr-auto mt-5 mb-5" width="800" height="150" alt="Divider" />
       <div className="text-lg font-bold text-center mb-2">Product Range</div>
