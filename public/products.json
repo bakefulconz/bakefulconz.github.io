@@ -1,5 +1,19 @@
 [
   {
+    "name": "Special Releases",
+    "items": [
+      {
+        "name": "Red Velvet Heart Cake",
+        "prices": [
+          ["", 55]
+        ],
+        "image": "/red-velvet-heart-cake.jpg",
+        "image2": "/red-velvet-heart-cake-2.jpg",
+        "description": "8\" 2 layer red velvet heart shaped cake with a cream cheese frosting."
+      }
+    ]
+  },
+  {
     "name": "Cakes",
     "items": [
       {
