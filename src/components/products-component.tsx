@@ -23,7 +23,7 @@ const ProductsComponent = ({productCategories}:{productCategories: Array<Categor
       {productCategories.map((productCategory: Category) => {
         return (
           <div key={productCategory.name}>
-            {productCategory.name === "Special Releases" ? <div id={productCategory.name.replace(/\s/g, "").toLowerCase()} className="font-bold bg-[url(/sprinkles-bg-valentines.jpg)] bg-top-left ml-auto mr-auto mb-5 rounded-md md:text-xl p-3">{productCategory.name}</div> : <div id={productCategory.name.replace(/\s/g, "").toLowerCase()} className="font-bold bg-[url(/sprinkles-bg.jpg)] bg-bottom-right ml-auto mr-auto mb-5 rounded-md md:text-xl p-3">{productCategory.name}</div>}
+            {productCategory.name === "Special Releases" ? <div id={productCategory.name.replace(/\s/g, "").toLowerCase()} className="font-bold bg-[url(/sprinkles-bg-valentines.jpg)] bg-top-left ml-auto mr-auto mb-5 rounded-md md:text-xl p-3">{productCategory.name}</div> : <div id={productCategory.name.replace(/\s/g, "").toLowerCase()} className="font-bold bg-[url(/sprinkles-bg.jpg)] bg-top-left ml-auto mr-auto mb-5 rounded-md md:text-xl p-3">{productCategory.name}</div>}
             {productCategory.items.map((product: Product) => {
               const hasNamedPrices = product.prices[0][0] !== "";
               const numSizes = product.prices.length;

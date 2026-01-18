@@ -10,6 +10,15 @@
         "image": "/red-velvet-heart-cake.jpg",
         "image2": "/red-velvet-heart-cake-2.jpg",
         "description": "8\" 2 layer red velvet heart shaped cake with a cream cheese frosting."
+      },
+      {
+        "name": "Valentine's Ganache Biscuits",
+        "prices": [
+          ["6pk", 35]
+        ],
+        "image": "/valentines-ganache-biscuits.jpg",
+        "image2": "/valentines-ganache-biscuits-2.jpg",
+        "description": "Chocolate biscuits topped with a swirl of Whittakers 72% Dark Ghana Chocolate ganache and mini love heart shaped sprinkles."
       }
     ]
   },
