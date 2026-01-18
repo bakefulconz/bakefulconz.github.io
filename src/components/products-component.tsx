@@ -1,19 +1,21 @@
 "use client";
-import React, { useState } from 'react'
+import { useState } from 'react'
 import { Category } from "@/interfaces/category";
 import { Product } from "@/interfaces/product";
 import Image from 'next/image';
 import ModalComponent from './modal-component';
 
 const ProductsComponent = ({productCategories}:{productCategories: Array<Category>}) => {
-  const [selectedImage, setSelectedImage] = useState('')
+  const [selectedProduct, setSelectedProduct] = useState<Product>()
+  const [selectedImageIndex, setSelectedImageIndex] = useState(0)
 
   const handleModalClose = () => {
-    setSelectedImage('')
+    setSelectedProduct(undefined);
   }
 
-  const handleOnClicked = (imageSource: string) => {
-    setSelectedImage(imageSource);
+  const handleOnClicked = (product: Product, imageIndex: number) => {
+    setSelectedProduct(product);
+    setSelectedImageIndex(imageIndex);
   }
 
   return (
@@ -36,8 +38,8 @@ const ProductsComponent = ({productCategories}:{productCategories: Array<Categor
                     {hasNamedPrices && `]`}
                   </div>
                   <div className="flex flex-row ml-auto mr-auto">
-                    <Image src={product.image} className="mt-5 mr-5 ml-auto cursor-zoom-in max-w-[45vw]" width="200" height="200" alt={product.name} onClick={() => handleOnClicked(product.image)} />
-                    <Image src={product.image2} className="mt-5 mr-auto cursor-zoom-in max-w-[45vw]" width="200" height="200" alt={product.name} onClick={() => handleOnClicked(product.image2)} />
+                    <Image src={product.image} className="mt-5 mr-5 ml-auto cursor-zoom-in max-w-[45vw]" width="200" height="200" alt={product.name} onClick={() => handleOnClicked(product, 0)} />
+                    <Image src={product.image2} className="mt-5 mr-auto cursor-zoom-in max-w-[45vw]" width="200" height="200" alt={product.name} onClick={() => handleOnClicked(product, 1)} />
                   </div>
                   <div className="whitespace-pre-wrap">
                     {product.description}
@@ -48,9 +50,10 @@ const ProductsComponent = ({productCategories}:{productCategories: Array<Categor
           </div>          
         )
       })}
-      {selectedImage && (
+      {selectedProduct && (
         <ModalComponent
-          selectedImage={selectedImage}
+          selectedProduct={selectedProduct}
+          selectedImageIndex={selectedImageIndex}
           onClose={handleModalClose}
         />
       )}

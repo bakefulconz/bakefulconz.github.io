@@ -23,3 +23,8 @@ body {
 .grecaptcha-badge { 
   visibility: hidden !important;
 }
+
+.image-gallery-slide img {
+  height: 500px;
+  width: 500px;
+}
