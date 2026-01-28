@@ -4,10 +4,6 @@
   --foreground-rgb: 0, 0, 0;
 }
 
-html {
-  scroll-behavior: smooth !important;
- }
-
 body {
   color: rgb(var(--foreground-rgb));
   background-position: top;
