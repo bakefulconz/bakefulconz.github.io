@@ -79,8 +79,9 @@ const ContactForm = ({productCategories}:{productCategories: Array<Category>}) =
       hasError = true;
     }
 
-    if (!hasError && (email.length === 0 || email.length > 256)) {
-      alert('An Email Address between 1 and 256 characters is required.');
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!hasError && (email.length === 0 || email.length > 256 || !emailRegex.test(email))) {
+      alert('A valid Email Address between 1 and 256 characters is required.');
       hasError = true;
     }
 
@@ -127,22 +128,22 @@ const ContactForm = ({productCategories}:{productCategories: Array<Category>}) =
         <div className="grid grid-cols-[1fr,3fr] grid-rows[auto,auto,auto,auto,auto,auto,auto,auto,auto] mt-5 text-left">
           <div className="text-left my-auto md:text-lg text-sm">First Name:<span className="text-red-600">*</span></div>
           <div className="col-start-2 pt-1">
-            <input type="text" className="form-control h-8 md:w-72 w-60 px-2 border-[1px] border-black bg-[#FFC8DD] rounded-md" value={firstName} onChange={(e) => setFirstName(e.target.value)} maxLength={256} required/><br/>
+            <input type="text" className="form-control h-8 md:w-72 w-60 px-2 border-[1px] border-black bg-[#FFC8DD] rounded-md" value={firstName} onChange={(e) => setFirstName(e.target.value.trim())} maxLength={256} required/><br/>
           </div>
 
           <div className="row-start-2 text-left my-auto md:text-lg text-sm">Last Name:<span className="text-red-600">*</span></div>
           <div className="row-start-2 col-start-2 pt-1">
-            <input type="text" className="form-control h-8 md:w-72 w-60 px-2 border-[1px] border-black bg-[#FFC8DD] rounded-md" value={lastName} onChange={(e) => setLastName(e.target.value)} maxLength={256} required/><br/>
+            <input type="text" className="form-control h-8 md:w-72 w-60 px-2 border-[1px] border-black bg-[#FFC8DD] rounded-md" value={lastName} onChange={(e) => setLastName(e.target.value.trim())} maxLength={256} required/><br/>
           </div>
 
           <div className="row-start-3 text-left my-auto md:text-lg text-sm">Email:<span className="text-red-600">*</span></div>
           <div className="row-start-3 col-start-2 pt-1">
-            <input type="text" className="form-control h-8 md:w-72 w-60 px-2 border-[1px] border-black bg-[#FFC8DD] rounded-md" value={email} onChange={(e) => setEmail(e.target.value)} maxLength={256} required/><br/>
+            <input type="text" className="form-control h-8 md:w-72 w-60 px-2 border-[1px] border-black bg-[#FFC8DD] rounded-md" value={email} onChange={(e) => setEmail(e.target.value.trim())} maxLength={256} required/><br/>
           </div>
 
           <div className="row-start-4 text-left pt-2 md:text-lg text-sm">Message:<span className="text-red-600">*</span></div>
           <div className="row-start-4 col-start-2 pt-1">
-            <textarea rows={5} className="form-control md:w-96 w-60 px-2 border-[1px] border-black bg-[#FFC8DD] rounded-md" value={message} onChange={(e) => setMessage(e.target.value)} maxLength={10*1024} required/><br/>
+            <textarea rows={5} className="form-control md:w-96 w-60 px-2 border-[1px] border-black bg-[#FFC8DD] rounded-md" value={message} onChange={(e) => setMessage(e.target.value.trim())} maxLength={10*1024} required/><br/>
           </div>
 
           <div className="row-start-5 col-span-2 text-left md:text-lg text-sm mt-2">Delivery & Pick-up:<span className="text-red-600">*</span></div>
