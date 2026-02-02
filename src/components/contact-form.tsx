@@ -56,19 +56,7 @@ const ContactForm = ({productCategories}:{productCategories: Array<Category>}) =
     
     let hasError: boolean = false;
 
-    let recaptcha = null
-    try {
-      reCaptchaRef.current.reset();
-      recaptcha = await reCaptchaRef.current.executeAsync();
-    } catch (error) {
-      console.log('Error retrieving recaptcha token ', error);
-    }
-
-    if (!recaptcha) {
-      console.log('Recaptcha value was not provided.');
-      hasError = true;
-    }
-
+    // Go through basic validation first
     if (!hasError && (firstName.length === 0 || firstName.length > 256)) {
       alert('A First Name between 1 and 256 characters is required.');
       hasError = true;
@@ -92,6 +80,20 @@ const ContactForm = ({productCategories}:{productCategories: Array<Category>}) =
 
     if (!hasError && !Array.isArray(requestedProducts)) {
       alert('Requested products collection is required.');
+      hasError = true;
+    }
+
+    // Finally obtain the recaptcha token.
+    let recaptcha = null
+    try {
+      reCaptchaRef.current.reset();
+      recaptcha = await reCaptchaRef.current.executeAsync();
+    } catch (error) {
+      console.log('Error retrieving recaptcha token ', error);
+    }
+
+    if (!hasError && !recaptcha) {
+      console.log('Recaptcha value was not provided.');
       hasError = true;
     }
 
@@ -138,7 +140,7 @@ const ContactForm = ({productCategories}:{productCategories: Array<Category>}) =
 
           <div className="row-start-3 text-left my-auto md:text-lg text-sm">Email:<span className="text-red-600">*</span></div>
           <div className="row-start-3 col-start-2 pt-1">
-            <input type="text" className="form-control h-8 md:w-72 w-60 px-2 border-[1px] border-black bg-[#FFC8DD] rounded-md" value={email} onChange={(e) => setEmail(e.target.value.trim())} maxLength={256} required/><br/>
+            <input type="email" className="form-control h-8 md:w-72 w-60 px-2 border-[1px] border-black bg-[#FFC8DD] rounded-md" value={email} onChange={(e) => setEmail(e.target.value.trim())} maxLength={256} required/><br/>
           </div>
 
           <div className="row-start-4 text-left pt-2 md:text-lg text-sm">Message:<span className="text-red-600">*</span></div>
