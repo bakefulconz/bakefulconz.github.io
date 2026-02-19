@@ -111,6 +111,17 @@
         "image": "/chocolate-bubblegum-cake.jpg",
         "image2": "/chocolate-bubblegum-cake-2.jpg",
         "description": "8\" 2 layer chocolate cake with bubblegum buttercream and covered with wine gums, Natural Confectionery gummy bear lollies and sprinkles."
+      },
+      {
+        "name": "Chocolate Mudcake",
+        "prices": [
+          ["", 45],
+          ["Dark Chocolate Ganache", 45],
+          ["Milk Chocolate Ganache", 45]
+        ],
+        "image": "/chocolate-mudcake.jpg",
+        "image2": "/chocolate-mudcake-2.jpg",
+        "description": "8\" single layer chocolate mudcake topped with either Whittaker's 72% Dark Ghana chocolate ganache OR Whittaker's 33% Creamy Milk Chocolate ganache."
       }
     ]
   },

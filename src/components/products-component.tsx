@@ -25,7 +25,7 @@ const ProductsComponent = ({productCategories}:{productCategories: Array<Categor
           <div key={productCategory.name}>
             {productCategory.name === "Special Releases" ? <div id={productCategory.name.replace(/\s/g, "").toLowerCase()} className="font-bold bg-[url(/sprinkles-bg-valentines.jpg)] bg-top-left ml-auto mr-auto mb-5 rounded-md md:text-xl p-3">{productCategory.name}</div> : <div id={productCategory.name.replace(/\s/g, "").toLowerCase()} className="font-bold bg-[url(/sprinkles-bg.jpg)] bg-top-left ml-auto mr-auto mb-5 rounded-md md:text-xl p-3">{productCategory.name}</div>}
             {productCategory.items.map((product: Product) => {
-              const hasNamedPrices = product.prices[0][0] !== "";
+              const hasNamedPrices = !product.prices.some(p => p[0] === "");
               const numSizes = product.prices.length;
               return (
                 <div key={product.name} className="mb-5 text-sm">
@@ -33,7 +33,7 @@ const ProductsComponent = ({productCategories}:{productCategories: Array<Categor
                     {!hasNamedPrices ? `$${product.prices[0][1]}` : ""}
                     {hasNamedPrices && `[`}
                     {hasNamedPrices && product.prices.map((priceItem: [string, number], index: number) => {
-                      return (<span key={priceItem[0]}>{priceItem[0]} ${priceItem[1]}{index < numSizes - 1 && `/`}</span>);
+                      return (<span key={priceItem[0]}>{priceItem[0]} ${priceItem[1]}{index < numSizes - 1 && `/`}</span>);                     
                     })}
                     {hasNamedPrices && `]`}
                   </div>

@@ -180,15 +180,14 @@ const ContactForm = ({productCategories}:{productCategories: Array<Category>}) =
                 return (
                   <div className="ml-4" key={`${product.name}`}>
                     {
-                      product.prices[0][0] === "" && (
+                      product.prices.length === 1 && (
                         <SinglePriceContactComponent
                           product={product}
                           onCheckboxChange={handleCheckboxChange} />
                       )
                     }
                     {
-                      product.prices[0][0] !== "" &&
-                      (
+                      product.prices.length > 1 && (
                         <MultiPriceContactComponent
                           product={product}
                           onCheckboxChange={handleCheckboxChange} />

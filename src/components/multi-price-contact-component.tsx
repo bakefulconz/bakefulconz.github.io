@@ -10,7 +10,7 @@ const MultiPriceContactComponent = (props: ContactComponentProps) => {
       <span className="text-sm">
         {props.product.name}
       </span>
-      {props.product.prices.map((price: [string, number]) => {
+      {props.product.prices.filter((price: [string, number]) => price[0] !== "").map((price: [string, number]) => {
         return (
           <label key={`${props.product.name}_${price[0]}`}>
             <input type="checkbox" id={`${props.product.name} ${price[0]}`} onChange={props.onCheckboxChange} className="ml-2 mr-1" />                           
