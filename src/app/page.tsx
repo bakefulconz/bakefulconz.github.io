@@ -24,8 +24,6 @@ export default async function Home() {
         <br /><br />
         <span className="text-sm font-bold italic">Note: My baking days are Monday through to Friday. Pick up and delivery is in Hamilton.</span>
       </div>
-      <Image id="about-bakeful" src="/divider.svg" className="ml-auto mr-auto mt-5 mb-5" width="800" height="150" alt="Divider" />
-      <Image src="/about-bakeful.png" className="ml-auto mr-auto" width="800" height="93" alt="About Bakeful" />
       <Image id="products" src="/divider.svg" className="ml-auto mr-auto mt-5 mb-5" width="800" height="150" alt="Divider" />
       <div className="text-lg font-bold text-center mb-2">Product Range</div>
       <div className="flex md:text-lg text-sm font-bold mb-5">
