@@ -122,6 +122,15 @@
         "image": "/chocolate-mudcake.jpg",
         "image2": "/chocolate-mudcake-2.jpg",
         "description": "8\" single layer chocolate mudcake topped with either Whittaker's 72% Dark Ghana chocolate ganache OR Whittaker's 33% Creamy Milk chocolate ganache."
+      },
+      {
+        "name": "Red Velvet Cake",
+        "prices": [
+          ["", 50]
+        ],
+        "image": "/red-velvet-cake.jpg",
+        "image2": "/red-velvet-cake-2.jpg",
+        "description": "8\" 2 layer red velvet cake with cream cheese frosting."
       }
     ]
   },
