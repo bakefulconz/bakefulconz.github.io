@@ -38,8 +38,8 @@ const ProductsComponent = ({productCategories}:{productCategories: Array<Categor
                     {hasNamedPrices && `]`}
                   </div>
                   <div className="flex flex-row ml-auto mr-auto">
-                    <Image src={product.image} className="mt-5 mr-5 ml-auto cursor-zoom-in max-w-[45vw]" width="200" height="200" alt={product.name} onClick={() => handleOnClicked(product, 0)} />
-                    <Image src={product.image2} className="mt-5 mr-auto cursor-zoom-in max-w-[45vw]" width="200" height="200" alt={product.name} onClick={() => handleOnClicked(product, 1)} />
+                    <Image src={`thumbs/${product.image}`} className="mt-5 mr-5 ml-auto cursor-zoom-in max-w-[45vw]" width="200" height="200" alt={product.name} onClick={() => handleOnClicked(product, 0)} />
+                    <Image src={`thumbs/${product.image2}`} className="mt-5 mr-auto cursor-zoom-in max-w-[45vw]" width="200" height="200" alt={product.name} onClick={() => handleOnClicked(product, 1)} />
                   </div>
                   <div className="whitespace-pre-wrap">
                     {product.description}
