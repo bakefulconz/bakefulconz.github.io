@@ -1,4 +1,18 @@
 [
+    {
+    "name": "Special Releases",
+    "items": [
+      {
+        "name": "Mother's Day Raspberry Lamington Cake",
+        "prices": [
+          ["", 60]
+        ],
+        "image": "/raspberry-lamington-cake.jpg",
+        "image2": "/raspberry-lamington-cake-2.jpg",
+        "description": "8\" 2 layer vanilla heart shaped cake, homemade raspberry filling, freshly whipped cream covered in a raspberry buttercream and coconut."
+      }
+    ]
+  },
   {
     "name": "Cakes",
     "items": [
