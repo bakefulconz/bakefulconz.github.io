@@ -15,17 +15,17 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
       - name: Setup Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v6
         with:
-          node-version: lts/iron
+          node-version: lts/krypton
       - name: Install dependencies
         run: npm install
       - name: Build NPM package
         run: npm run build
       - name: Upload artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: static-content
           path: out/
@@ -42,12 +42,12 @@ jobs:
           git config --global user.name github-actions
           git config --global user.email github-actions@github.com
       - name: Download artifact
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v8
         with:
           name: static-content
           path: out/
       - name: Checkout target
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
         with:
           repository: ${{ vars.DEPLOY_REPO }}
           path: 'deploy'
@@ -75,12 +75,12 @@ jobs:
           git config --global user.name github-actions
           git config --global user.email github-actions@github.com
       - name: Download artifact
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v8
         with:
           name: static-content
           path: out/
       - name: Checkout target
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
         with:
           repository: ${{ vars.DEPLOY_REPO }}
           path: 'deploy'
