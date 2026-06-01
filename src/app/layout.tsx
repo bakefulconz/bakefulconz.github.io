@@ -36,7 +36,7 @@ export default function RootLayout({
             <Link href="/#products" className="w-1/4 md:w-1/6">Products</Link>
             <Link href="/#faq" className="w-1/4 md:w-1/6">FAQ</Link>
             <Link href="/#contact" className="w-1/4 md:w-1/6">Contact</Link>
-            <Link href="/custom" className="w-1/2 md:w-1/6">Custom Orders</Link>
+            <Link href="/custom" className="w-1/2 md:w-1/6">Custom</Link>
             <Link href="/about" className="w-1/2 md:w-1/6">About</Link>
           </div>          
           <div className="max-w-[800px] ml-auto mr-auto">
