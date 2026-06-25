@@ -68,15 +68,6 @@
         "description": "8\" 2 layer chocolate cake with a coconut and pecan frosting and chocolate frosting."
       },
       {
-        "name": "Pinkie Cake",
-        "prices": [
-          ["", 55]
-        ],
-        "image": "/pinkie-cake.jpg",
-        "image2": "/pinkie-cake-2.jpg",
-        "description": "8\" 3 layer pink raspberry cake with layers of pink compote (rhubarb, strawberry and raspberry). Covered with a raspberry buttercream and sprinkles."
-      },
-      {
         "name": "Banoffee Cake",
         "prices": [
           ["", 55]
