@@ -1,5 +1,19 @@
 [
   {
+    "name": "Special Releases",
+    "items": [
+      {
+        "name": "Father's Day Truffles",
+        "prices": [
+          ["", 15]
+        ],
+        "image": "/truffles.jpg",
+        "image2": "/truffles-2.jpg",
+        "description": "6 pack gift box of Whittaker's Creamy Milk Chocolate Truffles, rolled in cocoa powder."
+      }
+    ]
+  },
+  {
     "name": "Cakes",
     "items": [
       {

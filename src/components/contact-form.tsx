@@ -145,7 +145,7 @@ const ContactForm = ({productCategories}:{productCategories: Array<Category>}) =
 
           <div className="row-start-4 text-left pt-2 md:text-lg text-sm">Details:<span className="text-red-600">*</span></div>
           <div className="row-start-4 col-start-2 pt-1">
-            <textarea rows={5} className="form-control md:w-96 w-60 px-2 border-[1px] border-black bg-[#FFC8DD] rounded-md placeholder:italic placeholder:text-sm" value={message} onChange={(e) => setMessage(e.target.value)} maxLength={10*1024} placeholder="Please include any additional details about your order, including the required date and time you need it by." required/><br/>
+            <textarea rows={5} className="form-control md:w-96 w-60 px-2 pt-1 border-[1px] border-black bg-[#FFC8DD] rounded-md placeholder:italic placeholder:text-sm" value={message} onChange={(e) => setMessage(e.target.value)} maxLength={10*1024} placeholder="Please include any additional details about your order, including the required date and time you need it by." required/><br/>
           </div>
 
           <div className="row-start-5 col-span-2 text-left md:text-lg text-sm mt-2">Delivery & Pick-up:<span className="text-red-600">*</span></div>
