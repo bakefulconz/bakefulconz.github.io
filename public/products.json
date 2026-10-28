@@ -5,8 +5,8 @@
       {
         "name": "Black Forest Cake",
         "prices": [
-          ["2 layers", 55],
-          ["3 layers", 70]
+          ["2 layers", 65],
+          ["3 layers", 75]
         ],
         "image": "/black-forest-cake.jpg",
         "image2": "/black-forest-cake-2.jpg",
@@ -15,7 +15,7 @@
       {
         "name": "Passionfruit White Chocolate Cake",
         "prices": [
-          ["2 layers", 55],
+          ["2 layers", 60],
           ["3 layers", 70]
         ],
         "image": "/passionfruit-white-chocolate-cake.jpg",
@@ -61,7 +61,7 @@
       {
         "name": "German Chocolate Cake",
         "prices": [
-          ["", 60]
+          ["", 65]
         ],
         "image": "/german-chocolate-cake.jpg",
         "image2": "/german-chocolate-cake-2.jpg",
