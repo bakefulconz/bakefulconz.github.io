@@ -131,6 +131,15 @@
         "image": "/coconut-licorice-cake.jpg",
         "image2": "/coconut-licorice-cake-2.jpg",
         "description": "8\" 2 layer coconut cake with Licorice buttercream, topped with Licorice Allsorts."
+      },
+      {
+        "name": "Lemon Raspberry Cake",
+        "prices": [
+          ["", 65]
+        ],
+        "image": "/lemon-raspberry-cake.jpg",
+        "image2": "/lemon-raspberry-cake-2.jpg",
+        "description": "8\" 2 layer lemon and raspberry cake, filled and topped with lemon curd, homemade raspberry sauce and raspberry buttercream."
       }
     ]
   },
